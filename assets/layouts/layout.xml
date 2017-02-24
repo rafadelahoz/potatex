@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<scrollview x="2%" y="2%" width="96%" height="96%">
+    <vbox width="100%">
+		<divider text="Divider" />
+		<button text="Button" width="100%" />
+		<text text="Text field" width="100%" />
+		<button text="Button" width="100%" />
+		<text text="Text field" width="100%" />
+		<divider text="Divider" />
+		<button text="Button" width="100%" />
+		<text text="Text field" width="100%" />
+		<button text="Button" width="100%" />
+		<text text="Text field" width="100%" />
+	</vbox>
+</scrollview>

@@ -4,13 +4,16 @@
 	<meta title="Handling Mouse Events" package="org.openfl.samples.handlingmouseevents" version="1.0.0" company="OpenFL" />
 	<app main="Main" path="Export" file="HandlingMouseEvents" />
 
+	<window width="384" height="216" fps="60" background="#000000" hardware="true" vsync="true" />
+
 	<source path="Source" />
-	
+
 	<haxelib name="openfl" />
 	<haxelib name="actuate" />
 	<haxelib name="hscript" />
     <haxelib name="haxeui" />
 
-	<assets path="Assets" rename="assets" />
+	<assets path="assets" rename="assets" />
+	<assets path="assets/layouts" rename="layouts" />
 
 </project>
