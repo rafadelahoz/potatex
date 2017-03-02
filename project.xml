@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <project>
 
-	<meta title="Handling Mouse Events" package="org.openfl.samples.handlingmouseevents" version="1.0.0" company="OpenFL" />
-	<app main="Main" path="Export" file="HandlingMouseEvents" />
+	<meta title="Potatex" package="org.openfl.samples.handlingmouseevents" version="1.0.0" company="Equipo Pingüino" />
+	<app main="Main" path="Export" file="Potatex" />
 
 	<window width="384" height="216" fps="60" background="#000000" hardware="true" vsync="true" />
 
-	<source path="Source" />
+	<source path="source" />
+	<source path="source/model" />
+	<source path="source/test" />
 
 	<haxelib name="openfl" />
 	<haxelib name="actuate" />

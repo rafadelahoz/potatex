@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<scrollview x="2%" y="2%" width="96%" height="96%">
+    <vbox width="100%">
+        <text text="Tema 1" id="txtLessonHeader"/>
+        <divider/>
+        <text text="Pregunta 1. ¿Qué pasa?" id="txtQuestion"/>
+        <hbox>
+            <button text="A." id="btnA1"/>
+            <text text="Sí" id="txtA1"/>
+        </hbox>
+        <hbox>
+            <button text="B." id="btnA2"/>
+            <text text="Quizás" id="txtA2"/>
+        </hbox>
+        <hbox>
+            <button text="C." id="btnA3"/>
+            <text text="No" id="txtA3"/>
+        </hbox>
+        <hbox>
+            <button text="D." id="btnA4"/>
+            <text text="¿Qué?" id="txtA4"/>
+        </hbox>
+	</vbox>
+</scrollview>

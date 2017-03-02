@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<scrollview x="2%" y="2%" width="96%" height="96%">
+    <vbox width="100%">
+        <text text="Bienvenida a Potatex!" />
+        <divider text="Divider" />
+		<button text="Test rápido" width="100%" id="btnQuickTest"/>
+		<text text="Test rápido" id="txtQuickTest"/>
+	</vbox>
+</scrollview>

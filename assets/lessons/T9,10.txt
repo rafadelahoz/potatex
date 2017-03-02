@@ -1,0 +1,509 @@
+1R-En aplicación de la normativa vigente para la prevención de la legionelosis,
+
+¿qué se entiende por sistema físico-químico como método de tratamiento de las
+
+instalaciones? (Ayuntamiento de Madrid julio 2004):
+
+A-el procedimiento de desinfección del agua aplicando
+
+radiaciones ultravioleta.
+
+B-el procedimiento de desinfección del agua utilizando el
+
+aumento de temperatura y ondas electromagnéticas.
+
+C-el procedimiento de destrucción de la carga bacteriológica
+
+del agua mediante la aplicación de procedimientos
+
+electroquímicos.
+
+2R-La normativa vigente en la Comunidad de Madrid para la prevención de la
+
+legionelosis, Orden 1187/1998 de 11 de junio, específica que, en cualquier
+
+caso, la descarga de aerosoles de torres de refrigeración estará con respecto
+
+de elementos o lugares a proteger (Ayuntamiento de Madrid julio 2004):
+
+A-a una cota de 10 metros por encima y 10 metros de distancia
+
+horizontal.
+
+B-a una cota de 2 metros cuando la distancia horizontal sea
+
+menor a 10 metros.
+
+C-a una cota de 2 metros por encima y 2 metros de distancia
+
+horizontal.
+
+3R-De acuerdo con el artículo 2 del RD 865/2003 sobre criterios higiénico-
+sanitarios para la prevención y control de legionelosis, seleccione de entre
+
+las siguientes opciones que se indican qué instalaciones son consideradas de
+
+“menos probabilidad de proliferación y dispersión de Legionella” (Ayuntamiento
+
+de Madrid julio 2004):
+
+A-depósitos de agua fría.
+
+B-jakuzzi.
+
+C-condensador evaporativo.
+
+4R-Según el RD 865/2003, por el que se establecen criterios higiénico-
+sanitarios para la prevención y control de la legionelosis, se consideran
+
+instalaciones con mayor probabilidad de proliferación y dispersión de
+
+Legionella (Castilla y León julio 2006):
+
+A-sistemas de agua caliente sanitaria sin circuito de
+
+retorno.
+
+B-sistemas de agua caliente sanitaria con acumulador y
+
+circuito de retorno.
+
+C-humectadores.
+
+D-fuentes ornamentales.
+
+5R-La Legionella produce (Ayudantes de inspección 2004):
+
+A-neumonía.
+
+B-fiebre de Pontiac.
+
+C-malaria.
+
+D-a y b.
+
+6-La Legionella muere a (Ayudantes de inspección 2004):
+
+A-20oC.
+
+B-30oC.
+
+C-45oC.
+
+D-70oC.
+
+
+7-La Legionelosis:
+
+A-es un problema de salud pública emergente cuyo agente
+
+causal es Legionella pneumophila.
+
+B-es una enfermedad en la que no se afecta el pulmón.
+
+C-es sintomatológicamente similar a la denominada Fiebre de
+
+Pontiac.
+
+D-es un síndrome febril agudo autolimitado, similar a un
+
+proceso gripal.
+
+8R-Ante la presencia de un caso de legionelosis en un viajero a bordo de un
+
+crucero, señale la respuesta CORRECTA (Ayudantes de Inspección 2009):
+
+A-El enfermo será aislado en su camarote y el personal que le
+
+atienda deberá portar el adecuado equipo de protección
+
+individual.
+
+B-El juez de guardia autorizará el desembarco del enfermo
+
+para ser evacuado al hospital, avisándose posteriormente a
+
+Sanidad Exterior, que realizará una inspección del buque con
+
+toma de muestras de agua.
+
+C-Se podrá permitir el desembarco de los pasajeros.
+
+D-La autoridad portuaria organizará y coordinará los trabajos
+
+de limpieza y desinfección del buque.
+
+9-La relevancia de la legionelosis, desde el punto de vista de la salud
+
+pública, viene dada por (señale la respuesta INCORRECTA):
+
+A-Su frecuente presentación en forma de brotes, tanto
+
+comunitarios como nosocomiales.
+
+B-Su letalidad, especialmente en jóvenes y niños o con
+
+enfermedades subyacentes.
+
+C-Su impacto en la economía, especialmente, en las
+
+comunidades autónomas con turismo y la posibilidad de
+
+prevención mediante el control de las instalaciones que
+
+utilizan agua.
+
+D-La proliferación y uso de dispositivos y sistemas que
+
+utilizan agua a unas determinadas temperaturas que facilitan
+
+la multiplicación de la bacteria y emiten aerosoles durante
+
+su funcionamiento.
+
+10-Algunas características de la Legionella pneumophila son (señale la
+
+respuesta INCORRECTA):
+
+A-Es un bacilo gram-positivo que requiere cisteína y otros
+
+nutrientes para su crecimiento in vitro.
+
+B-No presenta formas de resistencia (esporas) pero es capaz
+
+de sobrevivir en un amplio rango de temperatura,
+
+multiplicándose entre 20o C y 45o C, aunque la temperatura
+
+óptima de crecimiento es 35-37o C.
+
+C-El único modo de transmisión conocido es por vía aérea.
+
+D-El reservorio predominante de la bacteria es el agua,
+
+siendo capaz de sobrevivir en un variado rango de condiciones
+
+físico-químicas.
+
+11-La definición clínica de “Enfermedad respiratoria aguda con signos focales
+
+de neumonía, fiebre, cefalea y mialgias, donde alrededor de un tercio de los
+
+casos desarrollan diarrea y vómitos y la mitad de ellos pueden presentar
+
+confusión mental y delirio” se corresponde con:
+
+A-“Enfermedad del legionario”.
+
+B-“Fiebre de Pontiac”.
+
+C-“Enfermedad del legionario” o “Fiebre de Pontiac”.
+
+D-“Síndrome Respiratorio Agudo Grave (SARS)”.
+
+
+
+12-En relación a la toma de muestras de agua para la detección de legionela,
+
+señale la respuesta INCORRECTA:
+
+A-Antes de proceder a la toma de muestras de un buque o
+
+instalación tienen que definirse el punto o puntos de
+
+muestreo.
+
+B-En depósitos de agua caliente y fría se tomará
+
+aproximadamente un litro de agua de cada uno, preferiblemente
+
+de la parte alta del depósito.
+
+C-Medir temperatura del agua y cantidad de cloro libre y
+
+anotar.
+
+D-En la red de agua fría y caliente, se tomarán muestras de
+
+agua de los puntos terminales de la red, preferiblemente de
+
+camarotes relacionadas con enfermos, así como de algún
+
+servicio común, intentando elegir camarotes no utilizados en
+
+los días previos a la toma.
+
+13-En la toma y análisis de muestras de agua para la detección de legionela se
+
+debe (señale la respuesta INCORRECTA):
+
+A-Incorporar materiales sedimentados o de incrustación, si
+
+estos existen.
+
+B-En las torres de refrigeración y condensadores
+
+evaporativos, se tomará la muestra de la bandeja o depósito,
+
+recogiendo materiales sedimentados.
+
+C-El análisis de las muestras se realizará en cualquier
+
+laboratorio de ensayo que realice pruebas para la detección y
+
+recuento de Legionella en muestras de agua.
+
+D-En determinadas instalaciones de mayor o menor riesgo, se
+
+procurará recoger la muestra de aquellos puntos donde pueda
+
+acumularse agua y suciedad.
+
+14-Un ejemplo de un plan de muestreo microbiológico razonable establecido por
+
+el “Manual para la inspección de buques y emisión de certificados de sanidad a
+
+bordo” del RSI-2005 sería (señale la respuesta INCORRECTA):
+
+A-Muestra A: Una de las muestras debe tomarse del tanque de
+
+agua potable.
+
+B-Muestra B: La siguiente muestra debe tomarse del grifo más
+
+cercano al tanque de agua potable.
+
+C-Muestra C: Si hay indicios de estancamiento o de otras
+
+formas de contaminación en las áreas médicas debe tomarse una
+
+muestra adicional de acuerdo la norma ISO 19458.
+
+D-Muestra D: Cada vez que la temperatura del agua fría sea
+
+superior a 25 °C o la temperatura del agua caliente esté por
+
+debajo de 50 °C, es recomendable un análisis adicional de
+
+Legionella.
+
+15- El “Manual para la inspección de buques y emisión de certificados de
+
+sanidad a bordo” del RSI-2005 establece que es necesario revisar la siguiente
+
+documentación relativa al agua potable (señale la respuesta INCORRECTA):
+
+A-Planos de la construcción del sistema de agua potable.
+
+B-Informes y facturas de análisis del agua potable.
+
+C-El diario médico de a bordo o el libro de registro de casos
+
+de infecciones gastrointestinales, o ambos.
+
+D-Plan de seguridad del agua e instrucciones de mantenimiento
+
+de los dispositivos de tratamiento.
+
+16-Con respecto a los norovirus señale la respuesta CORRECTA:
+
+A-Norovirus es un género de virus perteneciente a la familia
+
+Noroviridae.
+
+B-El ser humano y determinados animales son los reservorios
+
+principales de los norovirus humanos.
+
+C-Estos virus son poco persistentes en el medio ambiente pero
+
+muy resistentes a tratamientos físicos y químicos de
+
+depuración de las aguas residuales.
+
+D-Son las aguas contaminadas las que propagan los virus entre
+
+los alimentos, principalmente los vegetales frescos y los
+
+moluscos bivalvos.
+
+17-Señale la respuesta INCORRECTA en relación a las siguientes características
+
+generales de los norovirus:
+
+A-Resisten los pH ácidos (pH 2 durante 30 minutos a 37 oC) o
+
+básicos (pH 12 durante 30 minutos a 37oC).
+
+B-Las gastroenteritis se caracterizan por la aparición
+
+repentina de vómitos o diarrea después de una corta
+
+incubación (24 h-48 h).
+
+C-Por lo general la dosis infectiva es muy alta, alrededor de
+
+1000 partículas virales.
+
+D-Se transmiten directamente de persona a persona a través de
+
+las manos.
+
+18-Cualquier alimento es susceptible de transmitir los norovirus, y la
+
+contaminación puede ocurrir a lo largo de todas las etapas de la cadena
+
+alimentaria, pero ¿cuáles son los alimentos en la mayoría de los brotes?:
+
+A-La fruta y los vegetales frescos cultivados en aguas
+
+contaminadas.
+
+B-Los moluscos bivalvos cultivados en aguas contaminadas.
+
+C-La carne de ungulados domésticos contaminada con su
+
+contenido gastrointestinal.
+
+D-Las respuesta a y b son correctas.
+
+19-Para prevenir o reducir los brotes de gastroenteritis causados por el
+
+norovirus, los buques (señale la respuesta INCORRECTA):
+
+A-Han mejorado las medidas de saneamiento del agua, los
+
+alimentos y la desinfección de las superficies.
+
+B-Están colocando dispensadores manuales de gel en lugares
+
+estratégicos del buque y se insta a los pasajeros ya la
+
+tripulación a utilizarlos.
+
+C-Algunas empresas de cruceros piden que las personas que
+
+presentan síntomas gastrointestinales en los centros médicos
+
+de a bordo sean aisladas hasta que transcurran al menos 24
+
+horas desde sus últimos síntomas.
+
+D-En algunos barcos también se aísla durante más de 72 horas
+
+a las personas asintomáticas que hayan estado en contacto con
+
+los portadores.
+
+20-Los norovirus se encuentran en las heces o el vómito de las personas
+
+infectadas. Son muy contagiosos y pueden propagarse fácilmente de diversas
+
+maneras, entre ellas por (señale la respuesta INCORRECTA):
+
+A-Contacto directo persona a persona.
+
+B-Contacto directo animal infectado a persona.
+
+C-Gotitas.
+
+D-Alimentos y agua.
+
+21-En relación a la desinsectación de aeronaves, la lucha contra insectos y
+
+arácnidos comprende entre otros, medios mecánicos como (señale la respuesta
+
+CORRECTA):
+
+A-Telas metálicas de nylon.
+
+B-Eliminación de basuras.
+
+C-Mosquiteras e insectocutores
+
+D-Todas las respuestas anteriores son correctas.
+
+
+22-La desinsectación de aeronaves es una medida de salud pública ordenada por
+
+el actual Reglamento Sanitario Internacional que actualmente utiliza
+
+diferentes procedimientos como (señale la respuesta INCORRECTA):
+
+A-Tratamiento del interior del avión mediante la aplicación
+
+de sprays insecticidas de acción rápida, inmediatamente antes
+
+del despegue con los pasajeros a bordo.
+
+B-Tratamiento del interior del avión en tierra antes de que
+
+los pasajeros suban a bordo, usando un aerosol de
+
+insecticidas residuales, más un tratamiento adicional durante
+
+el vuelo con un spray insecticida de acción rápida poco antes
+
+de aterrizar.
+
+C-Aplicación regular de un insecticida residual en todas las
+
+superficies internas del avión, excepto las áreas donde se
+
+preparan alimentos.
+
+D-Aplicación regular de un insecticida de acción inmediata en
+
+todas y cada una de las superficies internas del avión.
+
+23-Con respecto a las enfermedades transmisibles en aviones, señale la
+
+respuesta INCORRECTA:
+
+A-Las investigaciones han demostrado que el riesgo de
+
+transmisión de cualquier tipo de enfermedad transmisible a
+
+bordo de un avión es extremadamente pequeño
+
+B-El aire recirculado generalmente pasa a través de filtros
+
+HEPA (“high-efficiency particulate air”, filtros de
+
+partículas aéreas de alta eficiencia) que atrapan partículas,
+
+bacterias y hongos, pero no virus.
+
+C-Puede producirse transmisión de una infección entre
+
+pasajeros que están sentados en la misma zona del avión,
+
+normalmente como consecuencia de la tos o estornudos de una
+
+persona infectada.
+
+D-Las compañías aéreas pueden denegar el embarque a los
+
+pasajeros con apariencia de estar infectados por una
+
+enfermedad transmisible.
+
+24-En la parte sanitaria de la declaración general de aeronave establecida en
+
+el anexo 9 del RSI-2005 es obligatorio dar detalles relativos a cada
+
+desinsectación o tratamiento sanitario indicando (señale la respuesta
+
+INCORRECTA):
+
+A-Lugar.
+
+B-Fecha y hora.
+
+C-Método.
+
+D-Persona responsable.
+
+1c, 2b, 3a, 4b, 5d, 6d, 7a, 8c,9b, 10a, 11a, 12b, 13c, 14b, 15b, 16d, 17c,
+
+18d, 19d, 20b, 21d, 22d, 23b, 24d.

@@ -1,0 +1,522 @@
+1-Dentro de la epidemiología pueden diferenciarse tres grandes áreas de
+
+estudio como son (señale la respuesta INCORRECTA):
+
+A-Epidemiología descriptiva.
+
+B-Epidemiología analítica: observacional y experimental.
+
+C-Epidemiología teórica.
+
+D-Epidemiología científica.
+
+2-la epidemiología es la rama de la salud pública que tiene como propósito:
+
+A-describir y explicar la dinámica de la salud poblacional.
+
+B-identificar los elementos que la componen.
+
+C-Comprender las fuerzas que la gobiernan, a fin de
+
+intervenir en el curso de su desarrollo natural.
+
+D-Todas las respuestas anteriores son correctas.
+
+3-Bajo una perspectiva poblacional la epidemiología investiga (señale la
+
+respuesta INCORRECTA:
+
+A-La distribución, frecuencia y determinantes de la
+
+enfermedad y sus consecuencias biológicas, psicológicas y
+
+sociales.
+
+B-La distribución y frecuencia de los marcadores de bienestar
+
+y salud.
+
+C-La distribución, frecuencia y determinantes de los riesgos
+
+para la salud.
+
+D-Las formas de control de las enfermedades, de sus
+
+consecuencias y de sus riesgos.
+
+4-Entre los principales usos de la epidemiología en salud pública NO se
+
+encuentra:
+
+A-La identificación de la historia natural de las
+
+enfermedades.
+
+B-La descripción de la distribución, frecuencia y tendencias
+
+de la enfermedad en las personas individuales.
+
+C-La evaluación de la eficacia y efectividad de las
+
+intervenciones terapéuticas
+
+D-La evaluación del diseño y ejecución de los programas y
+
+servicios de salud.
+
+5-Los estudios de cohortes son:
+
+A-Observacionales.
+
+B-Longitudinales.
+
+C-Prospectivos.
+
+D-Las tres respuestas anteriores son correctas.
+
+6-La probabilidad de clasificar correctamente a un individuo enfermo, es
+
+decir, la probabilidad de que para un sujeto enfermo se obtenga en la prueba
+
+un resultado positivo se define como:
+
+A-Sensibilidad.
+
+B-Especificidad.
+
+C-Perceptibilidad.
+
+D-Determinabilidad.
+
+7-De un modo general se puede definir la especificidad como la capacidad para:
+
+A-Detectar a los sanos.
+
+B-Detectar a los enfermos.
+
+C-Detectar a los sanos y a los enfermos.
+
+D-Detectar a los sanos o a los enfermos.
+
+
+8-En la epidemiología, la morbilidad se calcula a través de:
+
+A-Sólo mediante la tasa de incidencia.
+
+B-Sólo mediante la tasa de prevalencia.
+
+C-Mediante la tasa de incidencia y de prevalencia.
+
+D-Ninguna de las respuestas anteriores es correcta.
+
+9-La probabilidad de ocurrencia de un evento en salud (enfermedad,
+
+complicación, muerte) y que expresa la proximidad de un daño que puede o no
+
+suceder se denomina:
+
+A-Riesgo.
+
+B-Peligro.
+
+C-Accidente.
+
+D-Trance.
+
+10R-¿Cuál de los siguientes tipos de epidemia No es considerada como tal?
+
+(Ayudantes de Inspección 2009):
+
+A-Epidemia limitativa circunscrita.
+
+B-Epidemia propagativa o progresiva.
+
+C-Epidemia mixta.
+
+D-Epidemia de fuente común.
+
+11R-Señale cómo se denomina el estudio analítico en el que dos grupos de
+
+sujetos, unos con el factor de riesgo y otros sin él, se observan y estudian a
+
+lo largo del tiempo (Ayudantes de Inspección 2008):
+
+A-Estudio de cohortes.
+
+B-Estudio de prevalencia.
+
+C-Estudio caso-control.
+
+D-Estudio experimental.
+
+12-Entre las consideraciones básicas para la selección de los controles se
+
+incluye:
+
+A-Deben ser seleccionados de la misma base poblacional (de la
+
+cohorte imaginaria) de donde se originaron los casos.
+
+B-Deben ser seleccionados independientemente de su condición
+
+de expuestos o no expuestos para garantizar que representen
+
+adecuadamente a la población base.
+
+C-La probabilidad de selección para los controles debe ser
+
+proporcional al tiempo que el sujeto permaneció elegible para
+
+desarrollar el evento o enfermedad en estudio.
+
+D-Todas las respuestas anteriores son correctas.
+
+13-A mediados del siglo XX, la epidemiología desarrolló con mayor precisión
+
+los conceptos de exposición, riesgo, asociación, confusión y sesgo, e
+
+incorporó el uso franco de la teoría de la probabilidad. ¿Qué tipo de
+
+enfermedades incrementaron su incidencia y contribuyeron al desarrollo de
+
+estos conceptos?:
+
+A-Las enfermedades infecciosas.
+
+B-Las enfermedades genéticas
+
+C-Las enfermedades crónicas.
+
+D-Las enfermedades mentales.
+
+14-En la epidemiología antigua, el texto “Aires, aguas, y lugares” señala que
+
+la dieta, el clima y la calidad de la tierra, los vientos y el agua son los
+
+factores involucrados en el desarrollo de las enfermedades en la población.
+
+¿Quién fue el autor de dicho texto?:
+
+A-Sócrates.
+
+B-Galeno.
+
+C-Hipócrates.
+
+D-Heródoto.
+
+15-En la actualidad predomina el modelo que propone que las relaciones entre
+
+las causas y los efectos son complejas y forman una unidad imposible de
+
+conocer completamente, representando un fenómeno cuyos procesos internos están
+
+ocultos al observador. ¿Cómo se denomina el modelo?
+
+A-Modelo del germen.
+
+B-Modelo de la unicausalidad.
+
+C-Modelo del miasma.
+
+D-Modelo de la caja negra.
+
+TÉCNICOSVET2015
+
+
+16-¿Cuál es el diseño de estudio epidemiológico más adecuado para evaluar la
+
+asociación entre varios potenciales factores de riesgo con una enfermedad de
+
+baja prevalencia?
+
+A-Estudio de cohorte.
+
+B-Estudio de casos y controles.
+
+C-Estudio ecológico.
+
+D-Estudio de corte transversal.
+
+17-El Odds Ratio es una medida de asociación que puede estimarse en cualquier
+
+tipo de estudio observacional, sin embargo su utilización se reserva
+
+especialmente para un tipo de estudio. ¿A qué tipo de estudio se refiere?
+
+A-Estudios de Cohorte.
+
+B-Estudios Ecológicos.
+
+C-Estudios Transversales.
+
+D-Estudios de Casos y Controles.
+
+18-¿Cuál es la finalidad de realizar ajustes por edad en la tasa de
+
+mortalidad?
+
+A-Comparar la mortalidad de poblaciones que tienen distinta
+
+estructura etaria.
+
+B-Evitar errores en la construcción de las tasas de
+
+mortalidad específicas por edad.
+
+C-Excluir de la mortalidad específica por edad aquellas
+
+causas de muerte no definidas.
+
+D-Analizar las tasas de mortalidad agrupados por grupos
+
+etarios.
+
+19-¿Cuál es el significado del concepto “Valor Predictivo Positivo”?
+
+A-La proporción de pacientes con resultados negativos de la
+
+prueba que tienen la alteración
+
+Blanco.
+
+B-La proporción de pacientes con resultados positivos de la
+
+prueba que tienen la alteración blanco.
+
+C-La proporción de pacientes con resultados negativos de la
+
+prueba que no tienen la alteración blanco.
+
+D-La proporción de pacientes con resultados positivos de la
+
+prueba que no tienen la alteración blanco.
+
+20-¿Cómo se denomina a aquellos atributos o características que pueden tomar
+
+diversos valores?
+
+A-Variables.
+
+B-Incidencia.
+
+C-Prevalencia.
+
+D-Ajuste.
+
+21-¿Qué tipo de estudios son útiles para la planificación de los servicios de
+
+salud y para caracterizar el estado de salud de la población en un punto en el
+
+tiempo?
+
+A-Los estudios experimentales.
+
+B-Los estudios de casos y controles.
+
+C-Los estudios transversales.
+
+D-Los estudios de cohorte.
+
+22-¿Cuál es una de las principales ventajas de los Estudios de Cohorte?
+
+A-Son eficientes para el estudio de enfermedades raras.
+
+B-Permiten estimar de manera directa medidas de incidencia o
+
+prevalencia.
+
+C-Son adecuados para medir eficientemente la exposición.
+
+D-Permiten estudiar varios eventos simultáneamente.
+
+23-¿Cómo se clasifican los errores en Epidemiología?
+
+A-Errores no aleatorios o sistemáticos y errores aleatorios o
+
+no sistemáticos.
+
+B-Errores aleatorios o sistemáticos y errores no aleatorios o
+
+no sistemáticos.
+
+C-Errores no aleatorios o no sistemáticos y errores
+
+aleatorios o sistemáticos.
+
+D-Errores aleatorios o no sistemáticos y errores aleatorios o
+
+sistemáticos.
+
+24-Si se realiza un estudio en una escuela y se desea utilizar una medida de
+
+centralización para la variable “resultados del examen final”. ¿Qué medida de
+
+centralización es la más adecuada?
+
+A-El rango.
+
+B-La moda.
+
+C-La media.
+
+D-La desviación estándar.
+
+25-¿Cuáles son las medidas de centralización?
+
+A-La moda, la desviación estándar y la media.
+
+B-La moda, la mediana y la media.
+
+C-La mediana, la desviación estándar y la media.
+
+D-La moda, la mediana y la desviación estándar.
+
+26-¿Qué características presenta una curva de distribución gaussiana?
+
+A-Es simétrica, unimodal y acampanada.
+
+B-Es asimétrica, unimodal y residual.
+
+C-Es simétrica, bimodal y residual.
+
+D-Es asimétrica, bimodal y acampanada.
+
+27-El análisis epidemiológico implica el procesamiento de datos a través de la
+
+generación, presentación e interpretación de tres tipos de medidas. ¿Qué tipo
+
+de medidas se utilizan para el análisis de datos epidemiológicos?
+
+A-Medidas de control, medidas de ocurrencia y medidas de
+
+asociación.
+
+B-Medidas de tendencia central, medidas de control y medidas
+
+de asociación.
+
+C-Medidas de ocurrencia, medidas de asociación y medidas de
+
+significación estadística.
+
+D-Medidas de significación estadística, medidas de control y
+
+medidas de tendencia central.
+
+28-La frecuencia o aparición de un número inesperado de casos de una
+
+determinada enfermedad, que excede o supera claramente a la frecuencia normal
+
+a lo que se espera con base a la experiencia anterior, en un tiempo y
+
+geografía dada se define como:
+
+A-Endemia.
+
+B-Pandemia.
+
+C-Epidemia.
+
+D-Contagiosidad.
+
+29-Toda desviación subjetiva u objetiva de un caso de bienestar fisiológico y
+
+se mide en el número de personas enfermas o episodios de una enfermedad en un
+
+período y lugar dado se corresponde con la definición de:
+
+A-Morbilidad.
+
+B-Mortalidad.
+
+C-Mortandad.
+
+D-Letalidad.
+
+30-¿Cuál es el término en función de cifras absolutas referido a episodios o
+
+personas enfermas, es el número de casos nuevos en una enfermedad en un
+
+período y lugar determinado?
+
+A-Prevalencia.
+
+B-Incidencia.
+
+C-Letalidad.
+
+D-Coincidencia.
+
+
+31R-Conforme al protocolo de actuación ante la notificación de la sospecha de
+
+un brote de enfermedad transmitida por alimentos de la Dirección General de
+
+Salud Pública, el informe final de una investigación de un brote de
+
+enfermedades transmitidas por alimentos, ¿a quién y por quién se enviará?
+
+(Galicia 2006):
+
+A-los afectados por el centro sanitario.
+
+B-los afectados y un resumen a los medios de comunicación por
+
+el Director General.
+
+C-los afectados por el Delegado Provincial previa solicitud
+
+por escrito.
+
+D-los medios de comunicación por el centro sanitario.
+
+32R-En un equipo investigador de un brote de enfermedad transmitida por
+
+alimentos en la CCAA de Galicia, formado por un epidemiólogo y un investigador
+
+veterinario, el responsable de realizar el informe de la historia del alimento
+
+es (Galicia 2006):
+
+A-el epidemiólogo.
+
+B-el inspector veterinario.
+
+C-es indiferente.
+
+D-ninguno de los dos.
+
+33R-¿Quién preside el Comité Nacional del Sistema de Alerta Sanitaria?
+
+(Castilla y León julio 2006):
+
+A-Ministro de Agricultura.
+
+B-Director General de Ganadería.
+
+C-Secretario General de Agricultura.
+
+D-Subdirector General de Sanidad Animal.
+
+34R-¿Cuál es el requisito imprescindible que ha de tenerse en cuenta en una
+
+alerta sanitaria transmitida por el SCIRI derivada de los alimentos? (Castilla
+
+y León julio 2006):
+
+A-que el producto alimentario se distribuya fuera de la CCAA.
+
+B-que un alimento no presente registro sanitario.
+
+C-que represente un riesgo directo o indirecto para la salud
+
+humana.
+
+D-que sobre el producto pese sospecha de fraude.
+
+
+
+1d, 2d, 3b, 4b, 5d, 6?, 7a, 8c, 9a, 10a, 11a, 12d, 13c,14c, 15d, 16b,17d, 18a, 19b, 20a, 21c, 22d, 23a, 24c, 25b, 26a, 27c, 28c, 29a, 30b, 31x, 32x,
+
+33b, 34c.
