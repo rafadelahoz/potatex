@@ -39,13 +39,10 @@ class LessonParser
 
         for (line in lines)
         {
-            trace("## line: " + line);
-            if (StringTools.trim(line).length <= 0)
+            if (StringTools.trim(line).length > 0)
             {
-                trace("Ignoring empty line");
-            }
-            else
-            {
+                trace("## line: " + line);
+
                 var markerPos = line.indexOf("-");
                 if (markerPos > 0)
                 {
@@ -58,7 +55,7 @@ class LessonParser
                     switch (token)
                     {
                         case Title:
-                            trace("Finish title: set lesson title: " + currentText);
+                            trace("#### Finish title: set lesson title: " + currentText);
                             lesson.title = currentText;
                             currentText = "";
                         case Question:
@@ -106,6 +103,7 @@ class LessonParser
                     // Check if it's the answers line
                     if (~/([1-9]+[a-d].?,?)+\.?/i.match(line))
                     {
+                        trace("Found answers line");
                         var correctAnswers : Array<String> = line.split(",");
                         for (correctAnswer in correctAnswers)
                         {
@@ -116,13 +114,24 @@ class LessonParser
                             if (q != null)
                             {
                                 q.correct = ["a", "b", "c", "d"].indexOf(letter);
+                                if (q.correct > -1)
+                                    q.correct += 1;
+                                trace("Question " + number + ": " + q.correct + "(" + letter + ")");
+                            }
+                            else
+                            {
+                                trace("Question " + number + " not found!");
                             }
                         }
                     }
+
+                    continue;
                 }
 
+                trace("Storing line");
                 // Append the text of the current line to the line
                 currentText += " " + line;
+                trace("#### CurrentText: " + currentText);
             }
         }
 

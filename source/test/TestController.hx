@@ -46,15 +46,22 @@ class TestController extends XMLController
 
             trace("Q"+Next+": " + currentQuestion);
 
-            getComponentAs("txtQuestion", Text).text = currentQuestion.text;
+            var text : Text = getComponentAs("txtQuestion", Text);
+            text.text = currentQuestion.text;
+            text.style.autoSize = true;
+
             var index : Int = 1;
             for (answer in currentQuestion.answers)
             {
-                getComponentAs("txtA" + index, Text).text = answer;
+                text = getComponentAs("txtA" + index, Text);
+                text.text = answer;
                 if (index == currentQuestion.correct)
-                    getComponentAs("txtA" + index, Text).style.color=0xFF00FF0a;
+                    text.style.color=0xFF00FF0a;
                 else
-                    getComponentAs("txtA" + index, Text).style.color=0xFF000000;
+                    text.style.color=0xFF000000;
+
+                text.style.autoSize = true;
+
                 index += 1;
             }
         }
