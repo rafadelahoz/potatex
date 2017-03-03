@@ -6,21 +6,23 @@ import haxe.ui.toolkit.events.UIEvent;
 import haxe.ui.toolkit.controls.Button;
 import haxe.ui.toolkit.controls.Text;
 
-class TestController extends XMLController
+class InfiniteTestController extends XMLController
 {
-    var data : TestData;
-
+    var lesson : Lesson;
     var currentQuestionIndex : Int;
-    var currentQuestion : TestQuestion;
+    var currentQuestion : Question;
 
-    public function new(TestData : TestData)
+    public function new(?lessonTitle : String = null)
     {
         super("layouts/test.xml");
 
-        data = TestData;
+        if (lessonTitle != null)
+            lesson = DB.getLessonByTitle(lessonTitle);
+        else
+            lesson = DB.lessons[0];
 
         var header : Text = getComponentAs("txtLessonHeader", Text);
-        header.text = data.title;
+        header.text = lesson.title;
         header.style.fontBold = true;
 
         fetchQuestion();
@@ -37,30 +39,35 @@ class TestController extends XMLController
         if (Next <= 0)
             Next = 1;
 
-        if (Next > 0 && data.questions.length > Next)
+        if (Next > 0 && lesson.questions.length > Next)
         {
+            var prevQuestion : Question = currentQuestion;
             currentQuestionIndex = Next;
 
             // Don't fail on next for now
-            currentQuestion = data.questions[Next];
+            currentQuestion = lesson.getQuestion(Next);
+            if (currentQuestion == null)
+            {
+                currentQuestion = lesson.questions[lesson.questions.indexOf(prevQuestion)+1];
+            }
 
             trace("Q"+Next+": " + currentQuestion);
 
             var text : Text = getComponentAs("txtQuestion", Text);
-            text.text = currentQuestion.question.text;
+            text.text = currentQuestion.text;
             text.multiline = true;
             text.wrapLines = true;
 
             var index : Int = 1;
-            for (answer in currentQuestion.question.answers)
+            for (answer in currentQuestion.answers)
             {
                 text = getComponentAs("txtA" + index, Text);
                 text.text = answer;
                 text.wrapLines = true;
                 text.multiline = true;
 
-                // Check correctness
-                // if (index == currentQuestion.question.correct)
+                if (index == currentQuestion.correct)
+                    text.text = answer + "*";
 
                 index += 1;
             }
@@ -78,10 +85,7 @@ class TestController extends XMLController
             var answer = compId.substr(compId.length-1);
             trace("Answer: " + answer);
 
-            currentQuestion.state = Answered;
-            currentQuestion.answer = Std.parseInt(answer);
-
-            if (Std.parseInt(answer) == currentQuestion.question.correct)
+            if (Std.parseInt(answer) == currentQuestion.correct)
                 trace("Hurray!");
 
             fetchQuestion(currentQuestionIndex+1);

@@ -34,7 +34,19 @@ class LessonSelectionController extends XMLController
     {
         var button = cast(e.component, Button);
 
+        var lesson : Lesson = DB.getLessonByTitle(button.text);
+
+        var options : TestBuilder.TestBuildOptions = {
+            numberOfQuestions: 5,
+            sourceLessons: [lesson],
+            config: {
+                verifyAtTheEnd: true
+            }
+        };
+
+        var testData : TestData = TestBuilder.build(options);
+
         root.removeAllChildren();
-        root.addChild(new TestController(button.text).view);
+        root.addChild(new TestController(testData).view);
     }
 }

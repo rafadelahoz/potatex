@@ -19,7 +19,7 @@ class MainController extends XMLController
             button.text = "Hahaha";
 
             root.removeAllChildren();
-            root.addChild(new TestController().view);
+            root.addChild(new InfiniteTestController().view);
         });
 
         attachEvent("btnCustomTest", MouseEvent.CLICK, function(e:UIEvent) {
