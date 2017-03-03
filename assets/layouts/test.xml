@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <scrollview width="100%" height="100%">
+    <!--<box columns="1" rows="3" width="100%">-->
     <vbox width="100%">
         <text text="Tema 1" id="txtLessonHeader"/>
         <divider/>
@@ -27,4 +28,21 @@
             <text text="¿Qué?" id="txtA4" width="100%"/>
         </hbox>
 	</vbox>
+    <vbox verticalAlign="bottom" width="100%">
+        <spacer />
+        <divider />
+        <continuousHBox id="directNavPanel">
+            <button text="A"/>
+            <button text="A"/>
+            <button text="A"/>
+            <button text="A"/>
+            <button text="A"/>
+            <button text="A"/>
+            <button text="A"/>
+            <button text="A"/>
+            <button text="A"/>
+            <button text="A"/>
+        </continuousHBox>
+    </vbox>
+    <!--</box>-->
 </scrollview>
