@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <project>
 
-	<meta title="Potatex" package="org.openfl.samples.handlingmouseevents" version="1.0.0" company="Equipo Pingüino" />
+	<meta title="Potatex" package="us.pinguino.potatex" version="1.0.0" company="Equipo Pingüino" />
 	<app main="Main" path="Export" file="Potatex" />
 
-	<window width="640" height="480" fps="60" background="#000000" hardware="true" vsync="true" />
+	<window width="640" height="480" fps="60" background="#000000" hardware="false" vsync="true" />
 
 	<source path="source" />
 	<source path="source/util" />
@@ -18,5 +18,6 @@
 
 	<assets path="assets" rename="assets" />
 	<assets path="assets/layouts" rename="layouts" />
+	<assets path="assets/fonts" rename="fonts" />
 
 </project>

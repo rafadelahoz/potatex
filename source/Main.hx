@@ -11,6 +11,7 @@ import haxe.ui.toolkit.events.MenuEvent;
 class Main {
     public static function main() {
         Toolkit.theme = new GradientTheme();
+        Macros.addStyleSheet("assets/style.css");
         Toolkit.init();
         Toolkit.openFullscreen(function(root:Root) {
             root.addChild(new MainController().view);

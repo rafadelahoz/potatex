@@ -5,6 +5,7 @@ import openfl.events.MouseEvent;
 import haxe.ui.toolkit.events.UIEvent;
 import haxe.ui.toolkit.controls.Button;
 import haxe.ui.toolkit.controls.Text;
+import haxe.ui.toolkit.containers.Container;
 
 class TestController extends XMLController
 {
@@ -29,6 +30,9 @@ class TestController extends XMLController
         // Prepare the answer buttons
         setupAnswerButtons();
 
+        // Build navigation buttons
+        buildNavigationButtons();
+
         // Start
         fetchQuestion();
     }
@@ -45,6 +49,18 @@ class TestController extends XMLController
         {
             var btnId = "btnA" + id;
             getComponentAs(btnId, Button).onClick = handleQuestionAnswer;
+        }
+    }
+
+    function buildNavigationButtons()
+    {
+        var navPanel : Container = getComponentAs("directNavPanel", Container);
+        for (i in 0...data.questions.length)
+        {
+            var btn : Button = new Button();
+            btn.text = "" + (i+1);
+            btn.onClick = handleGoToQuestion;
+            navPanel.addChild(btn);
         }
     }
 
@@ -157,20 +173,28 @@ class TestController extends XMLController
     {
         var button : Button = e.getComponentAs(Button);
         var answer = button.id.substr(button.id.length-1);
-        trace("Answer: " + answer);
+
+        var wasAnswered : Bool = (currentQuestion.state == Answered);
+        var oldAnswer : Int = currentQuestion.answer;
 
         currentQuestion.state = Answered;
         currentQuestion.answer = Std.parseInt(answer);
 
-        if (Std.parseInt(answer) == currentQuestion.question.correct)
-            trace("Hurray!");
-
-        // if (navigateOnAnswer)
-            // Go to next
-            // navNextQuestion(null);
-        // else
-            // Refresh current
-            navToQuestion(currentQuestionIndex);
+        // if (!navigateOnAnswer)
+        // Double click same answer to navigate to next question
+        if (wasAnswered && Std.parseInt(answer) == oldAnswer)
+        {
+            navNextQuestion(null);
+        }
+        else
+        {
+            // if (navigateOnAnswer)
+                // Go to next
+                // navNextQuestion(null);
+            // else
+                // Refresh current
+                navToQuestion(currentQuestionIndex);
+        }
     }
 
     function navPrevQuestion(e : UIEvent) : Void
@@ -181,6 +205,12 @@ class TestController extends XMLController
     function navNextQuestion(e : UIEvent) : Void
     {
         navToQuestion(currentQuestionIndex+1);
+    }
+
+    function handleGoToQuestion(e : UIEvent) : Void
+    {
+        var target : Int = Std.parseInt(e.getComponentAs(Button).text)-1;
+        navToQuestion(target);
     }
 
     function navToQuestion(index : Int)

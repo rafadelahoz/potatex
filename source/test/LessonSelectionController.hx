@@ -37,7 +37,7 @@ class LessonSelectionController extends XMLController
         var lesson : Lesson = DB.getLessonByTitle(button.text);
 
         var options : TestBuilder.TestBuildOptions = {
-            numberOfQuestions: 5,
+            numberOfQuestions: 45,
             sourceLessons: [lesson],
             config: {
                 verifyAtTheEnd: true

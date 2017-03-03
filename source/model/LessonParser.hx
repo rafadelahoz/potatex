@@ -43,7 +43,7 @@ class LessonParser
 
         var token : Token = Title;
         var currentText : String = "";
-        var question = new Question();
+        var question : Question = null;
 
         for (line in lines)
         {
@@ -99,7 +99,7 @@ class LessonParser
                     if (number != null)
                     {
                         dtrace("Located question, #" + number);
-                        question = new Question(number);
+                        question = new Question(lesson.title, number);
                         question.real = realQuestion;
                         token = Question;
                     }
