@@ -3,22 +3,22 @@
     <vbox width="100%">
         <text text="Tema 1" id="txtLessonHeader"/>
         <divider/>
-        <text text="Pregunta 1. ¿Qué pasa?" id="txtQuestion"/>
-        <hbox>
+        <text text="Pregunta 1. ¿Qué pasa?" id="txtQuestion" width="90%"/>
+        <hbox x="5%" width="90%">
             <button text="A." id="btnA1"/>
-            <text text="Sí" id="txtA1"/>
+            <text text="Sí" id="txtA1" width="100%"/>
         </hbox>
-        <hbox>
+        <hbox x="5%" width="90%">
             <button text="B." id="btnA2"/>
-            <text text="Quizás" id="txtA2"/>
+            <text text="Quizás" id="txtA2" width="100%"/>
         </hbox>
-        <hbox>
+        <hbox x="5%" width="90%">
             <button text="C." id="btnA3"/>
-            <text text="No" id="txtA3"/>
+            <text text="No" id="txtA3" width="100%"/>
         </hbox>
-        <hbox>
+        <hbox x="5%" width="90%">
             <button text="D." id="btnA4"/>
-            <text text="¿Qué?" id="txtA4"/>
+            <text text="¿Qué?" id="txtA4" width="100%"/>
         </hbox>
 	</vbox>
 </scrollview>

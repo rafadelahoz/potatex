@@ -12,11 +12,18 @@ class TestController extends XMLController
     var currentQuestionIndex : Int;
     var currentQuestion : Question;
 
-    public function new()
+    public function new(?lessonTitle : String = null)
     {
         super("layouts/test.xml");
 
-        lesson = DB.lessons[0];
+        if (lessonTitle != null)
+            lesson = DB.getLessonByTitle(lessonTitle);
+        else
+            lesson = DB.lessons[0];
+
+        var header : Text = getComponentAs("txtLessonHeader", Text);
+        header.text = lesson.title;
+        header.style.fontBold = true;
 
         fetchQuestion();
 
@@ -48,19 +55,19 @@ class TestController extends XMLController
 
             var text : Text = getComponentAs("txtQuestion", Text);
             text.text = currentQuestion.text;
-            text.style.autoSize = true;
+            text.multiline = true;
+            text.wrapLines = true;
 
             var index : Int = 1;
             for (answer in currentQuestion.answers)
             {
                 text = getComponentAs("txtA" + index, Text);
                 text.text = answer;
-                if (index == currentQuestion.correct)
-                    text.style.color=0xFF00FF0a;
-                else
-                    text.style.color=0xFF000000;
+                text.wrapLines = true;
+                text.multiline = true;
 
-                text.style.autoSize = true;
+                if (index == currentQuestion.correct)
+                    text.text = answer + "*";
 
                 index += 1;
             }
@@ -82,11 +89,6 @@ class TestController extends XMLController
                 trace("Hurray!");
 
             fetchQuestion(currentQuestionIndex+1);
-
-            /*
-            var button : Button = getComponentAs(compId, Button);
-            root.removeAllChildren();
-            root.addChild(new MainController().view);*/
         };
     }
 }

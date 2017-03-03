@@ -22,9 +22,17 @@ class LessonParser
             {
                 lessonObject = parseLesson(lessonName, lessonString);
                 DB.lessons.push(lessonObject);
-                break;
             }
         }
+
+        DB.lessons.sort(function(a : Lesson, b : Lesson) : Int {
+            if (a.title > b.title)
+                return 1;
+            else if (a.title < b.title)
+                return -1;
+            else
+                return 0;
+        });
     }
 
     function parseLesson(filename : String, contents : String) : Lesson
@@ -41,34 +49,38 @@ class LessonParser
         {
             if (StringTools.trim(line).length > 0)
             {
-                trace("## line: " + line);
+                dtrace("## line: " + line);
 
                 var markerPos = line.indexOf("-");
                 if (markerPos > 0)
                 {
+                    var originalLine : String = line;
+
                     var mark : String = line.substring(0, markerPos);
                     line = line.substring(markerPos+1);
                     mark = StringTools.trim(mark);
-                    trace("### Marker: " + mark);
+                    dtrace("### Marker: " + mark);
 
                     // Close the previous token
                     switch (token)
                     {
                         case Title:
-                            trace("#### Finish title: set lesson title: " + currentText);
+                            dtrace("#### Finish title: set lesson title: " + currentText);
                             lesson.title = currentText;
+                            if (lesson.title == null || lesson.title == "")
+                                lesson.title = filename.substring(0, filename.indexOf(".txt"));
                             currentText = "";
                         case Question:
-                            trace("Finish question: set question text: " + currentText);
+                            dtrace("Finish question: set question text: " + currentText);
                             question.text = currentText;
                             lesson.questions.push(question);
                             currentText = "";
                         case Answer:
-                            trace("Finish answer: add answer: " + currentText);
+                            dtrace("Finish answer: add answer: " + currentText);
                             question.answers.push(currentText);
                             currentText = "";
                         default:
-                            trace("Finished what?");
+                            dtrace("Finished what?");
                             currentText = "";
                     }
 
@@ -79,14 +91,14 @@ class LessonParser
                         realQuestion = true;
                         // Make sure to remove the R from the mark
                         mark = mark.substring(0, mark.length-1);
-                        trace("#### The question is real, marker:" + mark);
+                        dtrace("#### The question is real, marker:" + mark);
                     }
 
                     // Check if this is a question
                     var number : Null<Int> = Std.parseInt(mark);
                     if (number != null)
                     {
-                        trace("Located question, #" + number);
+                        dtrace("Located question, #" + number);
                         question = new Question(number);
                         question.real = realQuestion;
                         token = Question;
@@ -94,8 +106,13 @@ class LessonParser
                     // Or maybe it is an answer
                     else if (~/[A-D]/i.match(mark))
                     {
-                        trace("Located answer");
+                        dtrace("Located answer");
                         token = Answer;
+                    }
+                    else
+                    {
+                        // The token was no token, restore the line
+                        line = originalLine;
                     }
                 }
                 else
@@ -103,7 +120,7 @@ class LessonParser
                     // Check if it's the answers line
                     if (~/([1-9]+[a-d].?,?)+\.?/i.match(line))
                     {
-                        trace("Found answers line");
+                        dtrace("Found answers line");
                         var correctAnswers : Array<String> = line.split(",");
                         for (correctAnswer in correctAnswers)
                         {
@@ -116,26 +133,32 @@ class LessonParser
                                 q.correct = ["a", "b", "c", "d"].indexOf(letter);
                                 if (q.correct > -1)
                                     q.correct += 1;
-                                trace("Question " + number + ": " + q.correct + "(" + letter + ")");
+                                dtrace("Question " + number + ": " + q.correct + "(" + letter + ")");
                             }
                             else
                             {
-                                trace("Question " + number + " not found!");
+                                dtrace("Question " + number + " not found!");
                             }
                         }
-                    }
 
-                    continue;
+                        continue;
+                    }
                 }
 
-                trace("Storing line");
                 // Append the text of the current line to the line
                 currentText += " " + line;
-                trace("#### CurrentText: " + currentText);
+                dtrace("#### CurrentText: " + currentText);
             }
         }
 
         return lesson;
+    }
+
+    static var debugOutput : Bool = false;
+    static function dtrace(what : Dynamic)
+    {
+        if (debugOutput)
+            trace(what);
     }
 }
 

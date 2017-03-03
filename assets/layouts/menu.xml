@@ -4,6 +4,6 @@
         <text text="Bienvenida a Potatex!" />
         <divider text="Divider" />
 		<button text="Test rápido" width="100%" id="btnQuickTest"/>
-		<text text="Test rápido" id="txtQuickTest"/>
+        <button text="Elegir tema" width="100%" id="btnCustomTest"/>
 	</vbox>
 </scrollview>

@@ -21,5 +21,10 @@ class MainController extends XMLController
             root.removeAllChildren();
             root.addChild(new TestController().view);
         });
+
+        attachEvent("btnCustomTest", MouseEvent.CLICK, function(e:UIEvent) {
+            root.removeAllChildren();
+            root.addChild(new LessonSelectionController().view);
+        });
     }
 }
