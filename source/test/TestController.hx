@@ -23,12 +23,28 @@ class TestController extends XMLController
         header.text = data.title;
         header.style.fontBold = true;
 
-        fetchQuestion();
+        // Prepare the prev/next buttons
+        setupNavigationButtons();
 
+        // Prepare the answer buttons
+        setupAnswerButtons();
+
+        // Start
+        fetchQuestion();
+    }
+
+    function setupNavigationButtons()
+    {
+        getComponentAs("btnPrevQuestion", Button).onClick = navPrevQuestion;
+        getComponentAs("btnNextQuestion", Button).onClick = navNextQuestion;
+    }
+
+    function setupAnswerButtons()
+    {
         for (id in 1...5)
         {
             var btnId = "btnA" + id;
-            attachEvent(btnId, MouseEvent.CLICK, dispatchAnswer(btnId));
+            getComponentAs(btnId, Button).onClick = handleQuestionAnswer;
         }
     }
 
@@ -137,20 +153,45 @@ class TestController extends XMLController
         }
     }
 
-    function dispatchAnswer(compId : String) : UIEvent -> Void
+    function handleQuestionAnswer(e : UIEvent) : Void
     {
-        return function(e : UIEvent) : Void
-        {
-            var answer = compId.substr(compId.length-1);
-            trace("Answer: " + answer);
+        var button : Button = e.getComponentAs(Button);
+        var answer = button.id.substr(button.id.length-1);
+        trace("Answer: " + answer);
 
-            currentQuestion.state = Answered;
-            currentQuestion.answer = Std.parseInt(answer);
+        currentQuestion.state = Answered;
+        currentQuestion.answer = Std.parseInt(answer);
 
-            if (Std.parseInt(answer) == currentQuestion.question.correct)
-                trace("Hurray!");
+        if (Std.parseInt(answer) == currentQuestion.question.correct)
+            trace("Hurray!");
 
-            fetchQuestion(currentQuestionIndex+1);
-        };
+        // if (navigateOnAnswer)
+            // Go to next
+            // navNextQuestion(null);
+        // else
+            // Refresh current
+            navToQuestion(currentQuestionIndex);
+    }
+
+    function navPrevQuestion(e : UIEvent) : Void
+    {
+        navToQuestion(currentQuestionIndex-1);
+    }
+
+    function navNextQuestion(e : UIEvent) : Void
+    {
+        navToQuestion(currentQuestionIndex+1);
+    }
+
+    function navToQuestion(index : Int)
+    {
+        // Safeguard index
+        if (index > data.questions.length-1)
+            index = 0;
+        else if (index < 0)
+            index = data.questions.length-1;
+
+        // Go
+        fetchQuestion(index);
     }
 }

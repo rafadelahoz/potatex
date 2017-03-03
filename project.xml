@@ -4,7 +4,7 @@
 	<meta title="Potatex" package="org.openfl.samples.handlingmouseevents" version="1.0.0" company="Equipo Pingüino" />
 	<app main="Main" path="Export" file="Potatex" />
 
-	<window width="1024" height="768" fps="60" background="#000000" hardware="true" vsync="true" />
+	<window width="640" height="480" fps="60" background="#000000" hardware="true" vsync="true" />
 
 	<source path="source" />
 	<source path="source/util" />

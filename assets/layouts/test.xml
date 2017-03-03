@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<scrollview x="2%" y="2%" width="96%" height="96%">
+<scrollview width="100%" height="100%">
     <vbox width="100%">
         <text text="Tema 1" id="txtLessonHeader"/>
         <divider/>
-        <text text="Pregunta 1. ¿Qué pasa?" id="txtQuestion" width="90%"/>
+        <box columns="3" width="100%" style="padding: 5%;">
+            <button id="btnPrevQuestion" text="<" height="25" horizontalAlign="left"/>
+            <button id="btnNextQuestion" text=">" height="25" horizontalAlign="right"/>
+        </box>
+        <text text="Pregunta 1. ¿Qué pasa?" id="txtQuestion" x="5%" width="90%"/>
+    </vbox>
+    <vbox width="80%" left="10%" right="10%">
         <hbox x="5%" width="90%">
             <button text="A." id="btnA1"/>
             <text text="Sí" id="txtA1" width="100%"/>
