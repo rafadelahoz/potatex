@@ -173,22 +173,27 @@ class TestController extends XMLController
 
     function styleAnswerAftermath(index : Int, text : Text)
     {
+        if (currentQuestion.question.correct < 0)
+            return;
         if (index == currentQuestion.question.correct)
         {
-            text.style.backgroundColor = 0x00FF0a;
-            text.style.backgroundAlpha = 1;
+            // If the user has not answered use a different color
+            if (currentQuestion.answer < 0)
+                text.style.color = 0x011671;
+            else
+                text.style.color = 0x117c00;
+            text.style.fontBold = true;
         }
         else if (currentQuestion.answer == index)
         {
-            text.style.backgroundColor = 0xFF000a;
-            text.style.backgroundAlpha = 1;
+            text.style.color = 0xFF000a;
+            text.style.fontBold = true;
         }
     }
 
     function resetAnswerStyle(text : Text)
     {
-        text.style.backgroundColor = 0xFFFFFF;
-        text.style.backgroundAlpha = 0;
+        text.style.color = 0x000000;
         text.style.fontBold = false;
     }
 
@@ -305,6 +310,8 @@ class TestController extends XMLController
         text.style.fontBold = true;
         text.horizontalAlign = "center";
         panel.addChild(text);
+
+        fetchQuestion();
     }
 
     function styleNavButtonsAftermath()
@@ -317,6 +324,8 @@ class TestController extends XMLController
 
             if (question.question.correct < 0)
                 button.styleName = "unknown";
+            else if (question.answer < 0)
+                button.styleName = "unanswered";
             else if (question.answer == question.question.correct)
                 button.styleName = "correct";
             else

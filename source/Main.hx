@@ -35,6 +35,13 @@ class Main {
             color: 0x444444
         }));
 
+        StyleManager.instance.addStyle("Button.unanswered", new Style({
+            backgroundColor: 0x606c88,
+        	backgroundColorGradientEnd: 0x3f4c6b,
+        	color: 0xFFFFFF,
+        	borderColor: 0x495267
+        }));
+
         StyleManager.instance.addStyle("Button.answered", new Style({
             backgroundColor: 0x90BA9F,
         	backgroundColorGradientEnd: 0x70977D,
