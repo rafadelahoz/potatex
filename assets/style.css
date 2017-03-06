@@ -1,3 +1,10 @@
 Text {
     fontName: "fonts/Arial.ttf";
 }
+
+Button {
+    backgroundColor: 0x60886c;
+	backgroundColorGradientEnd: 0x3f6b4c;
+	color: 0xFFFFFF;
+	borderColor: 0x496752;
+}

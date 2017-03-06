@@ -14,6 +14,8 @@ class TestController extends XMLController
     var currentQuestionIndex : Int;
     var currentQuestion : TestQuestion;
 
+    var navButtons : Array<Button>;
+
     public function new(TestData : TestData)
     {
         super("layouts/test.xml");
@@ -33,8 +35,19 @@ class TestController extends XMLController
         // Build navigation buttons
         buildNavigationButtons();
 
+        // Prepare the finish button
+        setupFinishButton();
+
         // Start
         fetchQuestion();
+
+        /*view.addEventListener(UIEvent.RESIZE, function(what : Dynamic) {
+            var navPanel : Container = getComponentAs("directNavPanel", Container);
+            if (navPanel != null)
+                navPanel.onRefresh()
+            else
+                trace("what");
+        });*/
     }
 
     function setupNavigationButtons()
@@ -54,14 +67,25 @@ class TestController extends XMLController
 
     function buildNavigationButtons()
     {
+        navButtons = [];
+
         var navPanel : Container = getComponentAs("directNavPanel", Container);
         for (i in 0...data.questions.length)
         {
             var btn : Button = new Button();
+            btn.id = "nav" + (i);
             btn.text = "" + (i+1);
             btn.onClick = handleGoToQuestion;
+
             navPanel.addChild(btn);
+            navButtons.push(btn);
         }
+    }
+
+    function setupFinishButton()
+    {
+        var finish : Button = getComponentAs("btnFinish", Button);
+        finish.onClick = handleFinishButton;
     }
 
     function fetchQuestion(?Next : Int = -1)
@@ -88,6 +112,12 @@ class TestController extends XMLController
             for (answer in currentQuestion.question.answers)
             {
                 text = getComponentAs("txtA" + index, Text);
+                if (text == null)
+                {
+                    trace("Answer not found for updating: " + "txtA" + index);
+                    continue;
+                }
+
                 text.text = answer;
                 text.wrapLines = true;
                 text.multiline = true;
@@ -119,6 +149,8 @@ class TestController extends XMLController
                 case Aftermath:
                     setAnswerButtonsElabled(false);
             }
+
+            highlightCurrentNavButton();
         }
         else
         {
@@ -160,6 +192,25 @@ class TestController extends XMLController
         text.style.fontBold = false;
     }
 
+    function highlightCurrentNavButton()
+    {
+        // Update nav button
+        for (button in navButtons)
+        {
+            var number : Int = Std.parseInt(button.id.substring(3));
+            if (number == currentQuestionIndex)
+            {
+                button.style.borderSize = 3;
+                button.style.borderColor = 0xFFFFFF;
+            }
+            else
+            {
+                button.style.borderSize = 1;
+                button.style.borderColor = 0x495267;
+            }
+        }
+    }
+
     function setAnswerButtonsElabled(enabled : Bool)
     {
         for (id in 1...5)
@@ -179,6 +230,17 @@ class TestController extends XMLController
 
         currentQuestion.state = Answered;
         currentQuestion.answer = Std.parseInt(answer);
+
+        // Update nav button
+        var navPanel : Container = getComponentAs("directNavPanel", Container);
+        var navBtn : Button = navPanel.findChild("nav" + currentQuestionIndex, Button, true);
+        if (navBtn != null)
+        {
+            if (currentQuestion.state == Answered)
+                navBtn.styleName = "answered";
+            else
+                navBtn.styleName = null;
+        }
 
         // if (!navigateOnAnswer)
         // Double click same answer to navigate to next question
@@ -223,5 +285,42 @@ class TestController extends XMLController
 
         // Go
         fetchQuestion(index);
+    }
+
+    function handleFinishButton(e : UIEvent) : Void
+    {
+        // TODO: Popup with confirmation
+        for (question in data.questions)
+        {
+            question.state = Aftermath;
+        }
+
+        styleNavButtonsAftermath();
+
+        var panel : Container = cast(e.component.parent, Container);
+        panel.removeChild(e.component, true);
+
+        var text : Text = new Text();
+        text.text = "Correctas: " + data.getCorrectlyAswered() + "/" + data.getAnswerableQuestions();
+        text.style.fontBold = true;
+        text.horizontalAlign = "center";
+        panel.addChild(text);
+    }
+
+    function styleNavButtonsAftermath()
+    {
+        // Update nav button
+        for (button in navButtons)
+        {
+            var index : Int = Std.parseInt(button.id.substring(3));
+            var question : TestQuestion = data.questions[index];
+
+            if (question.question.correct < 0)
+                button.styleName = "unknown";
+            else if (question.answer == question.question.correct)
+                button.styleName = "correct";
+            else
+                button.styleName = "wrong";
+        }
     }
 }

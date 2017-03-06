@@ -14,6 +14,30 @@ class TestData
         questions = Questions;
         config = Config;
     }
+
+    public function getCorrectlyAswered() : Int
+    {
+        var correct : Int = 0;
+        for (question in questions)
+        {
+            if (question.question.correct > -1 && question.answer == question.question.correct)
+                correct += 1;
+        }
+
+        return correct;
+    }
+
+    public function getAnswerableQuestions() : Int
+    {
+        var answerable : Int = 0;
+        for (question in questions)
+        {
+            if (question.question.correct > -1)
+                answerable += 1;
+        }
+
+        return answerable;
+    }
 }
 
 typedef TestConfiguration = {
