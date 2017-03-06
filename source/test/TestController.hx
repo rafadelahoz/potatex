@@ -111,29 +111,34 @@ class TestController extends XMLController
             var index : Int = 1;
             for (answer in currentQuestion.question.answers)
             {
+                var btn : Button = getComponentAs("btnA" + index, Button);
+
                 text = getComponentAs("txtA" + index, Text);
                 if (text == null)
                 {
-                    trace("Answer not found for updating: " + "txtA" + index);
-                    continue;
+                    trace("Answer not found for updating: " + currentQuestion.question.lessonId + "-" + currentQuestion.question.number + ": txtA" + index);
+                    var btn : Button = getComponentAs("btnA" + index, Button);
+                    btn.disabled = true;
                 }
-
-                text.text = answer;
-                text.wrapLines = true;
-                text.multiline = true;
-                resetAnswerStyle(text);
-
-                // Check correctness
-                // if (index == currentQuestion.question.correct)
-                switch (currentQuestion.state)
+                else
                 {
-                    case Pending:
-                        styleAnswerPending(text);
-                    case Answered:
-                        styleAnswerAnswered(index, text);
-                    case Aftermath:
-                        styleAnswerAftermath(index, text);
+                    btn.disabled = false;
+                    text.text = answer;
+                    text.wrapLines = true;
+                    text.multiline = true;
+                    resetAnswerStyle(text);
 
+                    // Check correctness
+                    // if (index == currentQuestion.question.correct)
+                    switch (currentQuestion.state)
+                    {
+                        case Pending:
+                            styleAnswerPending(text);
+                        case Answered:
+                            styleAnswerAnswered(index, text);
+                        case Aftermath:
+                            styleAnswerAftermath(index, text);
+                    }
                 }
 
                 index += 1;
@@ -236,15 +241,24 @@ class TestController extends XMLController
         currentQuestion.state = Answered;
         currentQuestion.answer = Std.parseInt(answer);
 
-        // Update nav button
-        var navPanel : Container = getComponentAs("directNavPanel", Container);
-        var navBtn : Button = navPanel.findChild("nav" + currentQuestionIndex, Button, true);
-        if (navBtn != null)
+        // Check if questions have to be verified as they are answered
+        if (!data.config.verifyAtTheEnd)
         {
-            if (currentQuestion.state == Answered)
-                navBtn.styleName = "answered";
-            else
-                navBtn.styleName = null;
+            currentQuestion.state = Aftermath;
+            styleQuestionAftermath(currentQuestionIndex);
+        }
+        else
+        {
+            // Update nav button
+            var navPanel : Container = getComponentAs("directNavPanel", Container);
+            var navBtn : Button = navPanel.findChild("nav" + currentQuestionIndex, Button, true);
+            if (navBtn != null)
+            {
+                if (currentQuestion.state == Answered)
+                    navBtn.styleName = "answered";
+                else
+                    navBtn.styleName = null;
+            }
         }
 
         // if (!navigateOnAnswer)
@@ -295,22 +309,28 @@ class TestController extends XMLController
     function handleFinishButton(e : UIEvent) : Void
     {
         // TODO: Popup with confirmation
+
+        // Set the questions state to Aftermath
         for (question in data.questions)
         {
             question.state = Aftermath;
         }
 
+        // Update individual question style
         styleNavButtonsAftermath();
 
+        // Remove the finish button
         var panel : Container = cast(e.component.parent, Container);
         panel.removeChild(e.component, true);
 
+        // Add the question result text instead of the button
         var text : Text = new Text();
         text.text = "Correctas: " + data.getCorrectlyAswered() + "/" + data.getAnswerableQuestions();
         text.style.fontBold = true;
         text.horizontalAlign = "center";
         panel.addChild(text);
 
+        // Update current question style
         fetchQuestion();
     }
 
@@ -319,17 +339,31 @@ class TestController extends XMLController
         // Update nav button
         for (button in navButtons)
         {
-            var index : Int = Std.parseInt(button.id.substring(3));
-            var question : TestQuestion = data.questions[index];
-
-            if (question.question.correct < 0)
-                button.styleName = "unknown";
-            else if (question.answer < 0)
-                button.styleName = "unanswered";
-            else if (question.answer == question.question.correct)
-                button.styleName = "correct";
-            else
-                button.styleName = "wrong";
+            styleSingleButtonAftermath(button);
         }
+    }
+
+    function styleQuestionAftermath(questionIndex : Int)
+    {
+        if (questionIndex > -1 && questionIndex < data.questions.length)
+        {
+            var btn : Button = navButtons[questionIndex];
+            styleSingleButtonAftermath(btn);
+        }
+    }
+
+    function styleSingleButtonAftermath(button : Button)
+    {
+        var index : Int = Std.parseInt(button.id.substring(3));
+        var question : TestQuestion = data.questions[index];
+
+        if (question.question.correct < 0)
+            button.styleName = "unknown";
+        else if (question.answer < 0)
+            button.styleName = "unanswered";
+        else if (question.answer == question.question.correct)
+            button.styleName = "correct";
+        else
+            button.styleName = "wrong";
     }
 }

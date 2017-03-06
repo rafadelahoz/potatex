@@ -13,8 +13,8 @@
                 <button id="btnNextQuestion" text=">" height="15" horizontalAlign="right"/>
             </box>
         </vbox>
-        <vbox width="80%" left="10%" right="10%">
-            <text text="Pregunta 1. ¿Qué pasa?" id="txtQuestion" x="5%" width="90%"/>
+        <vbox width="100%">
+            <text text="Pregunta 1. ¿Qué pasa?" id="txtQuestion" width="100%"/>
             <hbox x="5%" width="90%">
                 <button text="A." id="btnA1"/>
                 <text text="Sí" id="txtA1" width="100%"/>
@@ -32,7 +32,7 @@
                 <text text="¿Qué?" id="txtA4" width="100%"/>
             </hbox>
     	</vbox>
-        <vbox verticalAlign="bottom" width="100%" height="20%">
+        <vbox verticalAlign="bottom" width="100%" height="20%" style="backgroundColor: 0x98b598">
             <divider />
             <continuousHBox id="directNavPanel" autoSize="true">
             </continuousHBox>
