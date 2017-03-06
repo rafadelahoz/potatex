@@ -22,6 +22,9 @@ class LessonParser
             {
                 lessonObject = parseLesson(lessonName, lessonString);
                 DB.lessons.push(lessonObject);
+
+                if (debugOutput)
+                    break;
             }
         }
 
@@ -61,58 +64,71 @@ class LessonParser
                     mark = StringTools.trim(mark);
                     dtrace("### Marker: " + mark);
 
-                    // Close the previous token
-                    switch (token)
+                    var prevToken : Token = token;
+                    var foundNewToken : Bool = false;
+                    // Analize the token
                     {
-                        case Title:
-                            dtrace("#### Finish title: set lesson title: " + currentText);
-                            lesson.title = currentText;
-                            if (lesson.title == null || lesson.title == "")
-                                lesson.title = filename.substring(0, filename.indexOf(".txt"));
-                            currentText = "";
-                        case Question:
-                            dtrace("Finish question: set question text: " + currentText);
-                            question.text = currentText;
-                            lesson.questions.push(question);
-                            currentText = "";
-                        case Answer:
-                            dtrace("Finish answer: add answer: " + currentText);
-                            question.answers.push(currentText);
-                            currentText = "";
-                        default:
-                            dtrace("Finished what?");
-                            currentText = "";
+                        var realQuestion : Bool = false;
+                        // If an R is found, we have found a real question
+                        if (mark.charAt(mark.length-1) == "R")
+                        {
+                            realQuestion = true;
+                            // Make sure to remove the R from the mark
+                            mark = mark.substring(0, mark.length-1);
+                            dtrace("#### The question is real, marker:" + mark);
+                        }
+
+                        // Check if this is a question
+                        var number : Null<Int> = Std.parseInt(mark);
+                        if (number != null)
+                        {
+                            dtrace("Located question, #" + number);
+                            question = new Question(lesson.title, number);
+                            question.real = realQuestion;
+                            token = Question;
+
+                            foundNewToken = true;
+                        }
+                        // Or maybe it is an answer
+                        else if (mark == "A" || mark == "B" || mark == "C" || mark=="D")
+                        {
+                            dtrace("Located answer");
+                            token = Answer;
+
+                            foundNewToken = true;
+                        }
+                        else
+                        {
+                            dtrace("#### This is no marker: " + mark);
+                            // The token was no token, restore the line
+                            line = originalLine;
+                        }
                     }
 
-                    var realQuestion : Bool = false;
-                    // If an R is found, we have found a real question
-                    if (mark.charAt(mark.length-1) == "R")
+                    if (foundNewToken)
                     {
-                        realQuestion = true;
-                        // Make sure to remove the R from the mark
-                        mark = mark.substring(0, mark.length-1);
-                        dtrace("#### The question is real, marker:" + mark);
-                    }
-
-                    // Check if this is a question
-                    var number : Null<Int> = Std.parseInt(mark);
-                    if (number != null)
-                    {
-                        dtrace("Located question, #" + number);
-                        question = new Question(lesson.title, number);
-                        question.real = realQuestion;
-                        token = Question;
-                    }
-                    // Or maybe it is an answer
-                    else if (~/[A-D]/i.match(mark))
-                    {
-                        dtrace("Located answer");
-                        token = Answer;
-                    }
-                    else
-                    {
-                        // The token was no token, restore the line
-                        line = originalLine;
+                        // Close the previous token
+                        switch (prevToken)
+                        {
+                            case Title:
+                                dtrace("#### Finish title: set lesson title: " + currentText);
+                                lesson.title = currentText;
+                                if (lesson.title == null || lesson.title == "")
+                                    lesson.title = filename.substring(0, filename.indexOf(".txt"));
+                                currentText = "";
+                            case Question:
+                                dtrace("Finish question: set question text: " + currentText);
+                                question.text = currentText;
+                                lesson.questions.push(question);
+                                currentText = "";
+                            case Answer:
+                                dtrace("Finish answer: add answer: " + currentText);
+                                question.answers.push(currentText);
+                                currentText = "";
+                            default:
+                                dtrace("Finished what?");
+                                currentText = "";
+                        }
                     }
                 }
                 else
