@@ -27,6 +27,9 @@ class TestController extends XMLController
         header.text = data.title;
         header.style.fontBold = true;
 
+        // Prepare the exit button
+        setupExitButton();
+
         // Prepare the prev/next buttons
         setupNavigationButtons();
 
@@ -53,6 +56,14 @@ class TestController extends XMLController
         // Setup debug routines
         setupDebugRoutines();
 
+    }
+
+    function setupExitButton()
+    {
+        getComponentAs("btnExit", Button).onClick = function(e : Dynamic) {
+            root.removeAllChildren();
+            root.addChild(new LessonSelectionController().view);
+        };
     }
 
     function setupNavigationButtons()

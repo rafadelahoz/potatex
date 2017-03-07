@@ -41,7 +41,7 @@ class TestBuilder
             questions.push(tquestion);
         }
 
-        var data : TestData = new TestData("Dummy Test!", questions, buildOptions.config);
+        var data : TestData = new TestData("Test a medida", questions, buildOptions.config);
         return data;
     }
 

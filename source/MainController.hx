@@ -2,6 +2,7 @@ package;
 
 import haxe.ui.toolkit.core.XMLController;
 import openfl.events.MouseEvent;
+import haxe.ui.toolkit.core.PopupManager;
 import haxe.ui.toolkit.events.UIEvent;
 import haxe.ui.toolkit.controls.Button;
 
@@ -11,8 +12,11 @@ class MainController extends XMLController
     {
         super("layouts/menu.xml");
 
-        var parser : LessonParser = new LessonParser();
-        parser.loadLessons();
+        if (DB.lessons == null || DB.lessons.length <= 0)
+        {
+            var parser : LessonParser = new LessonParser();
+            parser.loadLessons();
+        }
 
         attachEvent("btnQuickTest", MouseEvent.CLICK, function(e:UIEvent) {
             var button : Button = getComponentAs("btnQuickTest", Button);

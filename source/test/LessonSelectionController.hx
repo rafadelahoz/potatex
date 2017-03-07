@@ -8,6 +8,7 @@ import haxe.ui.toolkit.controls.CheckBox;
 import haxe.ui.toolkit.containers.Container;
 import haxe.ui.toolkit.controls.Text;
 import haxe.ui.toolkit.controls.TextInput;
+import haxe.ui.toolkit.containers.Accordion;
 
 class LessonSelectionController extends XMLController
 {
@@ -29,10 +30,34 @@ class LessonSelectionController extends XMLController
             box.text = lesson.title;
             panel.addChild(box);
             lessonCheckboxes.push(box);
+
+            // Restore last selected lessons
+            if (Session.lastTestBuildOptions != null)
+            {
+                if (Session.lastTestBuildOptions.sourceLessons.indexOf(lesson) > -1)
+                    box.selected = true;
+            }
+        }
+
+        if (Session.lastTestBuildOptions != null)
+        {
+            getComponentAs("txtNumberOfQuestions", TextInput).text = "" + Session.lastTestBuildOptions.numberOfQuestions;
+            getComponentAs("checkOnlyReal", CheckBox).selected = Session.lastTestBuildOptions.onlyReal;
+            getComponentAs("checkOnlyAnswered", CheckBox).selected = Session.lastTestBuildOptions.onlyAnswered;
+            getComponentAs("checkAutomaticCorrection", CheckBox).selected = !Session.lastTestBuildOptions.config.verifyAtTheEnd;
         }
 
         var startButton : Button = getComponentAs("btnStart", Button);
         startButton.onClick = handleStartButtonClick;
+
+        var backButton : Button = getComponentAs("btnExit", Button);
+        backButton.onClick = handleExitButtonClick;
+
+        setupLessonListButtons();
+
+        /*var accordion : Accordion = getComponentAs("accordion", Accordion);
+        accordion.getButton(0).dispatchEvent(new UIEvent(UIEvent.CLICK));
+        accordion.showPage(0);*/
     }
 
     function handleStartButtonClick(e : UIEvent)
@@ -71,8 +96,54 @@ class LessonSelectionController extends XMLController
 
         var testData : TestData = TestBuilder.build(options);
 
+        if (testData.questions == null || testData.questions.length == 0)
+        {
+            showPopup("No hay ninguna pregunta dentro de los temas elegidos con la configuración seleccionada.\nRelaja la configuración y vuelve a probar");
+            return;
+        }
+        else if (testData.questions.length < options.numberOfQuestions)
+        {
+            trace("Hay menos preguntas que las requeridas");
+        }
+
+        // Store the current test build options
+        Session.lastTestBuildOptions = options;
+
         root.removeAllChildren();
         root.addChild(new TestController(testData).view);
+    }
+
+    function handleExitButtonClick(ev : Dynamic)
+    {
+        root.removeAllChildren();
+        root.addChild(new MainController().view);
+    }
+
+    function setupLessonListButtons()
+    {
+        var allButton : Button = getComponentAs("btnSelectAll", Button);
+        allButton.onClick = function(evt : Dynamic) {
+            for (checkbox in lessonCheckboxes)
+            {
+                checkbox.selected = true;
+            }
+        };
+
+        var noneButton : Button = getComponentAs("btnSelectNone", Button);
+        noneButton.onClick = function(evt : Dynamic) {
+            for (checkbox in lessonCheckboxes)
+            {
+                checkbox.selected = false;
+            }
+        };
+
+        var randomButton = getComponentAs("btnSelectRandom", Button);
+        randomButton.onClick = function(evt : Dynamic) {
+            for (checkbox in lessonCheckboxes)
+            {
+                checkbox.selected = Random.float() < 0.5;
+            }
+        };
     }
 
     function getSafeCheckboxValue(checkboxId : String) : Bool
