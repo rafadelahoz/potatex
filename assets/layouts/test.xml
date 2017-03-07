@@ -3,6 +3,7 @@
     <vbox width="100%">
         <vbox width="100%">
             <box width="100%" columns="3">
+                <button id="btnDebug" text="!" horizontalAlign="left"/>
                 <text text="Tema 1" id="txtLessonHeader" horizontalAlign="center"/>
                 <button id="btnExit" text="Salir" width="15" horizontalAlign="right"/>
             </box>
@@ -15,19 +16,19 @@
         </vbox>
         <vbox width="100%">
             <text text="Pregunta 1. ¿Qué pasa?" id="txtQuestion" width="100%"/>
-            <hbox x="5%" width="90%">
+            <hbox width="100%">
                 <button text="A." id="btnA1"/>
                 <text text="Sí" id="txtA1" width="100%"/>
             </hbox>
-            <hbox x="5%" width="90%">
+            <hbox width="100%">
                 <button text="B." id="btnA2"/>
                 <text text="Quizás" id="txtA2" width="100%"/>
             </hbox>
-            <hbox x="5%" width="90%">
+            <hbox width="100%">
                 <button text="C." id="btnA3"/>
                 <text text="No" id="txtA3" width="100%"/>
             </hbox>
-            <hbox x="5%" width="90%">
+            <hbox width="100%">
                 <button text="D." id="btnA4"/>
                 <text text="¿Qué?" id="txtA4" width="100%"/>
             </hbox>

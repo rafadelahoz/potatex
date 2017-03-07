@@ -2,11 +2,15 @@ package;
 
 class Lesson
 {
+    public var number : Int;
+    public var filename : String;
     public var title : String;
     public var questions : Array<Question>;
 
     public function new()
     {
+        number = -1;
+        filename = "filename";
         title = "Dummy lesson";
         questions = [];
     }

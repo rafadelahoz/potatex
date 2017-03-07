@@ -7,10 +7,18 @@
     <divider/>
     <accordion width="100%" height="100%" paddingTop="10" paddingLeft="10" paddingRight="10" paddingBottom="10">
         <continuousVBox text="Temas" width="100%" height="100%" id="lessonList">
+            <!--<vbox width="100%">-->
+                <button id="btnSelectAll" text="Seleccionar todos"/>
+                <button id="btnSelectNone" text="Limpiar selección"/>
+                <button id="btnSelectRandom" text="Aleatorio"/>
+            <!--</vbox>-->
         </continuousVBox>
         <grid text="Configuración" columns="2">
             <text text="Número de preguntas: " />
             <textinput id="txtNumberOfQuestions" text="25" />
+            <checkbox id="checkOnlyReal" text="Sólo preguntas reales"/>
+            <checkbox id="checkOnlyAnswered" text="Sólo preguntas con respuesta"/>
+            <spacer/>
             <checkbox id="checkAutomaticCorrection" text="Corregir al responder"/>
         </grid>
     </accordion>

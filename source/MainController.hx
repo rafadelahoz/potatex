@@ -14,8 +14,6 @@ class MainController extends XMLController
         var parser : LessonParser = new LessonParser();
         parser.loadLessons();
 
-        trace(DB.getLessonByTitle("A0").questions[0]);
-
         attachEvent("btnQuickTest", MouseEvent.CLICK, function(e:UIEvent) {
             var button : Button = getComponentAs("btnQuickTest", Button);
             button.text = "Hahaha";

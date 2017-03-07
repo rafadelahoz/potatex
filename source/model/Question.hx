@@ -21,4 +21,22 @@ class Question
         correct = -1;
         real = false;
     }
+
+    public function toString() : String
+    {
+        var string : String = "";
+
+        string += lessonId + ": " + "Q" + number + ": " + text + (real ? " (Real) " : " ") + (correct < 0 ? "X" : [" ", "A", "B", "C", "D"][correct]) + "\n";
+        for (answer in answers)
+        {
+            string += "  - " + answer + "\n";
+        }
+
+        return string;
+    }
+
+    public function getDetailLine() : String
+    {
+        return lessonId + ": " + "Q" + number + ": " + text + (real ? " (Real) " : " ") + (correct < 0 ? "X" : [" ", "A", "B", "C", "D"][correct]);
+    }
 }

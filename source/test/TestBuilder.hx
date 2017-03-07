@@ -8,6 +8,23 @@ class TestBuilder
         // Fetch all questions together
         var allQuestions = mergeAllQuestions(lessons);
 
+        // Filter out unwanted questions
+        // 1. Real questions only
+        if (buildOptions.onlyReal)
+        {
+            allQuestions = allQuestions.filter(function (question : Question) : Bool {
+                return question.real;
+            });
+        }
+
+        // 2. Answerable questions only
+        if (buildOptions.onlyAnswered)
+        {
+            allQuestions = allQuestions.filter(function (question : Question) : Bool {
+                return question.correct > -1;
+            });
+        }
+
         // Check if there are enough questions to fill the expected qtty.
         var availableQuestions = allQuestions.length;
         // If there's not enough, use all of them?
@@ -43,5 +60,7 @@ class TestBuilder
 typedef TestBuildOptions = {
     numberOfQuestions : Int,
     sourceLessons : Array<Lesson>,
+    onlyReal : Bool,
+    onlyAnswered : Bool,
     config : TestData.TestConfiguration
 }

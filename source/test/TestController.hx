@@ -2,6 +2,7 @@ package;
 
 import haxe.ui.toolkit.core.XMLController;
 import openfl.events.MouseEvent;
+import openfl.events.KeyboardEvent;
 import haxe.ui.toolkit.events.UIEvent;
 import haxe.ui.toolkit.controls.Button;
 import haxe.ui.toolkit.controls.Text;
@@ -48,6 +49,10 @@ class TestController extends XMLController
             else
                 trace("what");
         });*/
+
+        // Setup debug routines
+        setupDebugRoutines();
+
     }
 
     function setupNavigationButtons()
@@ -108,12 +113,16 @@ class TestController extends XMLController
             text.multiline = true;
             text.wrapLines = true;
 
+            var btn : Button = null;
+
             var index : Int = 1;
             for (answer in currentQuestion.question.answers)
             {
-                var btn : Button = getComponentAs("btnA" + index, Button);
+                btn = getComponentAs("btnA" + index, Button);
+                btn.visible = true;
 
                 text = getComponentAs("txtA" + index, Text);
+
                 if (text == null)
                 {
                     trace("Answer not found for updating: " + currentQuestion.question.lessonId + "-" + currentQuestion.question.number + ": txtA" + index);
@@ -142,6 +151,19 @@ class TestController extends XMLController
                 }
 
                 index += 1;
+            }
+
+            // There may be less than 4 answers
+            if (index <= 4)
+            {
+                for (i in index...5)
+                {
+                    btn = getComponentAs("btnA" + index, Button);
+                    text = getComponentAs("txtA" + index, Text);
+
+                    btn.visible = false;
+                    text.text = "";
+                }
             }
 
             // Handle question state
@@ -365,5 +387,32 @@ class TestController extends XMLController
             button.styleName = "correct";
         else
             button.styleName = "wrong";
+    }
+
+    function setupDebugRoutines()
+    {
+        getComponent("btnDebug").onClick = handleDebugClick;
+    }
+
+    function handleDebugClick(thing : Dynamic) : Void
+    {
+        var txt : Text = getComponentAs("txtQuestion", Text);
+
+        if (txt == null)
+        {
+            trace("#txtQuestion not found");
+        }
+        else
+        {
+            if (txt.userData == null || txt.userData == false)
+                txt.userData = true;
+            else
+                txt.userData = false;
+
+            if (txt.userData == true)
+                txt.text = (currentQuestionIndex+1) + "-" + currentQuestion.question.getDetailLine();
+            else
+                txt.text = (currentQuestionIndex+1) + "-" + currentQuestion.question.text;
+        }
     }
 }

@@ -14,4 +14,15 @@ class DB
 
         return null;
     }
+
+    public static function getLessonByFilename(filename : String) : Lesson
+    {
+        for (lesson in lessons)
+        {
+            if (lesson.filename == filename)
+                return lesson;
+        }
+
+        return null;
+    }
 }

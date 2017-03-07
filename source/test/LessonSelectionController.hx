@@ -35,26 +35,6 @@ class LessonSelectionController extends XMLController
         startButton.onClick = handleStartButtonClick;
     }
 
-    function handleLessonButtonClick(e : UIEvent)
-    {
-        var button = cast(e.component, Button);
-
-        var lesson : Lesson = DB.getLessonByTitle(button.text);
-
-        var options : TestBuilder.TestBuildOptions = {
-            numberOfQuestions: 45,
-            sourceLessons: [lesson],
-            config: {
-                verifyAtTheEnd: false
-            }
-        };
-
-        var testData : TestData = TestBuilder.build(options);
-
-        root.removeAllChildren();
-        root.addChild(new TestController(testData).view);
-    }
-
     function handleStartButtonClick(e : UIEvent)
     {
         var lessons : Array<Lesson> = [];
@@ -64,22 +44,28 @@ class LessonSelectionController extends XMLController
                 lessons.push(DB.getLessonByTitle(box.text));
         }
 
+        if (lessons.length == 0)
+        {
+            showPopup("Si no eliges algún tema, no puedo preparar el test :(");
+            return;
+        }
+
         var nQuestionsTextBox : TextInput = getComponentAs("txtNumberOfQuestions", TextInput);
         var txtNumQuestions : String = nQuestionsTextBox.text;
         var numQuestions : Null<Int> = Std.parseInt(txtNumQuestions);
         if (numQuestions == null)
         {
-            showPopup("Por favor, introduce un número de preguntas");
+            showPopup("¿Podrías indicar cuántas preguntas tiene que tener el test?");
             return;
         }
 
-        var ongoingCheck : Bool = getComponentAs("checkAutomaticCorrection", CheckBox).selected;
-
         var options : TestBuilder.TestBuildOptions = {
-            numberOfQuestions: numQuestions,
-            sourceLessons: lessons,
+            numberOfQuestions:  numQuestions,
+            sourceLessons:      lessons,
+            onlyReal:           getSafeCheckboxValue("checkOnlyReal"),
+            onlyAnswered:       getSafeCheckboxValue("checkOnlyAnswered"),
             config: {
-                verifyAtTheEnd: !ongoingCheck
+                verifyAtTheEnd: !getSafeCheckboxValue("checkAutomaticCorrection")
             }
         };
 
@@ -87,5 +73,17 @@ class LessonSelectionController extends XMLController
 
         root.removeAllChildren();
         root.addChild(new TestController(testData).view);
+    }
+
+    function getSafeCheckboxValue(checkboxId : String) : Bool
+    {
+        var value : Bool = false;
+        var checkbox : CheckBox = getComponentAs(checkboxId, CheckBox);
+        if (checkbox != null)
+            value = checkbox.selected;
+        else
+            trace("Checkbox not found: " + checkboxId);
+
+        return value;
     }
 }
