@@ -4,6 +4,11 @@ class Question
 {
     public var lessonId : String;
 
+    public var id (get, null) : String;
+    public inline function get_id() {
+        return lessonId + "-" + number;
+    }
+
     public var number : Int;
     public var text : String;
 

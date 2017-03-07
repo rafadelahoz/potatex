@@ -56,6 +56,11 @@ class TestController extends XMLController
         // Setup debug routines
         setupDebugRoutines();
 
+        trace("Test with the following questions:");
+        for (question in data.questions)
+        {
+            trace(" - " + question.question.id);
+        }
     }
 
     function setupExitButton()
