@@ -37,12 +37,7 @@ class LessonParser
         }
 
         DB.lessons.sort(function(a : Lesson, b : Lesson) : Int {
-            if (a.title > b.title)
-                return 1;
-            else if (a.title < b.title)
-                return -1;
-            else
-                return 0;
+            return a.number - b.number;
         });
     }
 
