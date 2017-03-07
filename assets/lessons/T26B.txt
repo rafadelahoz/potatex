@@ -1,0 +1,359 @@
+1R-¿Cuál de los siguientes alimentos no puede irradiarse? (Ayudantes de
+
+inspección 2004):
+
+A-hierbas aromáticas secas.
+
+B-condimentos.
+
+C-especias.
+
+D-tubérculos.
+
+2R-Las semiconservas de anchoa necesitan (Ayudantes de inspección 2004):
+
+A-irradiación.
+
+B-refrigeración.
+
+C-congelación.
+
+D-temperatura ambiente.
+
+3R-Tras la termización, la leche debe reaccionar (Andalucía 2005):
+
+A-positivamente a la prueba de la fosfatasa.
+
+B-negativamente a la prueba de la fosfatasa.
+
+C-positivamente a la prueba de la fosfatasa, exclusivamente si
+
+ésta se ha hecho por debajo de los 71,7 oC.
+
+D-negativamente a la prueba de la fosfatasa, exclusivamente si
+
+ésta se ha hecho por encima de los 71,7 oC.
+
+4-Podemos considerar que una conserva ha sufrido un tratamiento de
+
+esterilización seguro con respecto a la presencia de esporos de Clostridium
+
+botulinum, cuando:
+
+A-se alcanza en el agua de cocción 121 oC durante 0,21
+
+minutos.
+
+B-se alcanza en todos los puntos del producto 121 oC durante
+
+0,21 minutos.
+
+C-se alcanza en el agua de cocción 121 oC durante 2,52
+
+minutos.
+
+D-se alcanza en todos los puntos del producto 121 oC durante
+
+2,52 minutos.
+
+5-Cuando se dice que un tratamiento térmico tiene un valor F0 = 3, significa:
+
+A-que dicho tratamiento térmico tiene un efecto letal
+
+equivalente al de un tratamiento a 121 oC durante 3 minutos,
+
+con respecto a los esporos de Clostridium botulinum.
+
+B-que dicho tratamiento térmico tiene un efecto letal
+
+equivalente al de un tratamiento 3 veces superior al valor D
+
+para el Clostridium botulinum.
+
+C-que tengo que mantener el tratamiento durante 3 minutos para
+
+que resulte eficaz.
+
+D-que dicho tratamiento logra 3 reducciones decimales en el no
+
+de esporos de Clostridium botulinum presentes en el alimento.
+
+6-Cual es el valor D para Clostridium botulinum a 121 o C:
+
+A-2,52 minutos.
+
+B-0,21 minutos.
+
+C-eso depende del tamaño del envase y del tipo de alimento.
+
+D-eso depende del pH del líquido de cobertura de la conserva.
+
+7-El valor Z es:
+
+A-El no de grados que debemos aumentar la Ta para que el
+
+tiempo de reducción decimal (valor D), se reduzca un 90%.
+
+B-El no de grados que debemos aumentar la Ta para que el
+
+tiempo de reducción decimal (valor D), se reduzca un 10%.
+
+C-El no de grados que debemos aumentar la Ta para que el valor
+
+F0, se reduzca un 90%.
+
+D-El no de grados que debemos aumentar la Ta para que el no de
+
+esporos de Clostridium botulinum, se reduzca un 90 %.
+
+
+
+8-La corrosión interna puede evitarse:
+
+A-bajando el pH de la conserva.
+
+B-eliminando el estaño del recipiente.
+
+C-aplicando lacas protectoras en la cara interna de los
+
+envases.
+
+D-empleando aleaciones de plomo y estaño.
+
+9-Para evitar roturas de envases de vidrio durante el tratamiento térmico, es
+
+necesario:
+
+A-Llenado en caliente a una To mínima de 65 oC, mantener
+
+sobrepresión en el interior del autoclave y que el espacio de
+
+cabeza sea inferior al 6% de la capacidad del envase.
+
+B-Enfriar el producto bruscamente tras el tratamiento térmico.
+
+C-Realizar el vacío en autoclave
+
+D-Aplicar el tratamiento térmico, sin cerrar el envase.
+
+10-Una vez adicionado el líquido de cobertura en la conserva, el paso
+
+siguiente consiste en:
+
+A-cierre hermético del recipiente.
+
+B-calentar el producto hasta una To de 100 oC.
+
+C-eliminar el espacio de cabeza en el interior del envase.
+
+D-eliminación del aire interior para lograr un nivel de vacío
+
+suficiente.
+
+11-Cuál es la característica común a todos los encurtidos:
+
+A-que todos sufren una fermentación ácido-láctica.
+
+B-que todos son tratados con soluciones alcalinas para quitar
+
+el amargor.
+
+C-que todos llevan vinagre, pues es la característica
+
+fundamental de los encurtidos.
+
+D-que todos contienen ácido láctico, pues es la característica
+
+fundamental de los encurtidos.
+
+12-Saccharomyces cerevisiae:
+
+A-Es una bacteria responsable de alteraciones en los zumos de
+
+frutas.
+
+B-Es una levadura beneficiosa para obtener el sabor adecuado
+
+de los zumos.
+
+C-Es una levadura responsable de alteraciones en los zumos de
+
+frutas.
+
+D-Es una bacteria beneficiosa para obtener el sabor adecuado
+
+de los zumos.
+
+13-Según el RD 1353/1983 (modifica el CAE) ¿cuál de los siguientes productos
+
+admite como combustible para el ahumado de alimentos?:
+
+A-Madera de pino.
+
+B-Madera de abeto.
+
+C-Zuro de maíz.
+
+D-Juncos.
+
+14-La tasa de muerte de las bacterias en forma vegetativa aumenta 10 veces por
+
+cada XoC que aumenta la temperatura dentro del margen de temperaturas letales
+
+y los esporos por cada YoC de aumento:
+
+A-X=10oC e Y=20oC.
+
+B-X=1oC e Y=5oC.
+
+C-X=1oC e Y=10oC.
+
+D-X=5oC e Y=10oC.
+
+15-¿Cuál de las siguientes sustancias no está autorizada como congelante en
+
+contacto directo con los alimentos ultracongelados?:
+
+A-Argón.
+
+B-Aire.
+
+C-Anhídrido carbónico.
+
+D-Nitrógeno.
+
+
+
+16-Al proceso por el cual ciertos alimentos se someten a la acción del agua o
+
+su vapor, a temperatura y periodos de tiempo variables, según las exigencias
+
+de cada producto, se le conoce como:
+
+A-Cocción.
+
+B-Esterilización.
+
+C-Pasteurización.
+
+D-Tindalización.
+
+17-Señalar la respuesta correcta respecto a la relación entre pH y temperatura
+
+en los tratamientos de conservación de alimentos:
+
+A-Los productos alimenticios con un pH bajo pueden hacerse
+
+microbiológicamente inocuos y estables con tratamientos
+
+térmicos menos intensos.
+
+B-Los productos alimenticios con un pH alto pueden hacerse
+
+microbiológicamente inocuos y estables con tratamientos
+
+térmicos menos intensos.
+
+C-Los productos alimenticios con un pH neutro pueden hacerse
+
+microbiológicamente inocuos y estables con tratamientos
+
+térmicos menos intensos.
+
+D-El pH y la temperatura no tienen relación, si la tienen la
+
+temperatura y el tiempo.
+
+18-El proceso mediante el cual se destruyen todos los microorganismos
+
+patógenos y se destruye o inactiva la casi totalidad de la flora banal se le
+
+conoce como:
+
+A-Pasteurización.
+
+B-Liofilización.
+
+C-Esterilización.
+
+D-Ninguna de las anteriores es correcta.
+
+19-Señalar la respuesta incorrecta. El encurtido consiste en someter los
+
+alimentos vegetales a la acción del vinagre de origen vínico, con o sin
+
+adición de sal, azúcares u otros condimentos. Dichos vegetales pueden
+
+encontrarse:
+
+A-Fermentados (fermentación láctica).
+
+B-Cocidos.
+
+C-En su estado natural.
+
+D-Tratados con salmuera.
+
+20-Indicar cuál de las siguientes manipulaciones está prohibida en lo que se
+
+refiere al ahumado de alimentos:
+
+A-Utilizar para la combustión maderas autorizadas de primer o
+
+segundo uso.
+
+B-Que la combustión de dichas maderas sea incompleta.
+
+C-El uso de plantas aromáticas (mezcladas con las maderas).
+
+D-Utilizar como combustible madera de abeto.
+
+21-Es falso respecto del escabechado y el encurtido:
+
+A-Los alimentos vegetales que se sometan al encurtido pueden
+
+estar en su estado natural, en salmuera o fermentados
+
+(fermentación láctica).
+
+B-Tanto en el encurtido como en el escabechado, el vinagre que
+
+se utilice ha de ser de origen vínico.
+
+C-Los alimentos de origen animal que se sometan al escabechado
+
+pueden estar crudos, cocidos o fritos.
+
+D-La adición de sal es optativa en el encurtido y en el
+
+escabechado.
+
+22-Utiliza el calor artificial para reducir el contenido de agua de los
+
+alimentos:
+
+A-La liofilización.
+
+B-La deshidratación.
+
+C-La desecación.
+
+D-En los tres métodos se puede utilizar el calor artificial.
+
+
+
+23-No es un objetivo del procedimiento de conservación por frío de los
+
+alimentos:
+
+A-Reducir la actividad enzimática.
+
+B-Eliminar la actividad microbiana.
+
+C-Mantener las condiciones físicas y químicas del alimento.
+
+D-Las tres respuestas anteriores son correctas.
+
+1d, 2b, 3a, 4d, 5a, 6b, 7a, 8c, 9a, 10d, 11c, 12c, 13b, 14d, 15a, 16a, 17a,
+
+18d, 19b, 20a, 21d, 22b, 23d.

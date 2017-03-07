@@ -1,0 +1,398 @@
+1-Las fuentes de radiaciones ionizantes autorizadas por la Directiva 1993/3/CE
+
+y por el RD 348/2001 son (señale la respuesta incorrecta):
+
+A-rayos gamma procedentes de radionucleidos Cobalto 60 o Cesio
+
+137.
+
+B-rayos alfa o beta y neutrones.
+
+C-rayos x generados por aparatos que funcionen con una energía
+
+nominal igual o superior a 5 Mev.
+
+D-electrones de alta energía generados por aparatos que
+
+funcionen con una energía nominal igual o superior a 5 Mev.
+
+2-Con respecto a la irradiación de alimentos señale la respuesta incorrecta:
+
+A-El Codex Alimentarius señala que dosis inferiores a 10 KGy
+
+no suponen peligro y establece ese valor como el valor máximo
+
+de la dosis total media de radiación absorbida.
+
+B-el RD 348/2001 sólo autoriza la irradiación de hierbas
+
+aromáticas secas, especias, condimentos vegetales y algunas
+
+variedades de frutas y verduras para inhibir su germinación.
+
+C-se indicará la mención “irradiado” o “tratado con radiación
+
+ionizante” en envases individuales destinados al consumidor
+
+final o a colectividades.
+
+D-la radurización utiliza dosis más altas que la radicidación
+
+y más bajas que la radapertización.
+
+3-En relación a la aplicación de altas presiones en la conservación de
+
+alimentos, señale la respuesta incorrecta:
+
+A-está basada en la aplicación del principio de Chatelier y en
+
+el principio de la presión isostática.
+
+B-los microorganismos son más sensibles a la presurización en
+
+la fase de latencia o estacionaria que durante la fase de
+
+crecimiento.
+
+C-el alimento se procesa en el envase definitivo, evitando así
+
+las contaminaciones posteriores.
+
+D-bajo condiciones de presurización el agua puede permanecer
+
+en estado líquido a temperaturas de congelación.
+
+4-En relación al tratamiento óhmico señale la respuesta incorrecta:
+
+A-se emplea fundamentalmente en platos preparados cárnicos,
+
+donde produce un calentamiento interno del producto de manera
+
+uniforme, tanto en la fase líquida como en la fase sólida.
+
+B-consiste en el paso de una corriente eléctrica a través de
+
+un alimento que actúa como material de resistencia,
+
+produciéndose calor y causando un incremento de temperatura en
+
+el producto.
+
+C-la conductividad eléctrica es mayor cuanto mayor es el
+
+contenido de sal y grasa del producto.
+
+D-la presencia de burbujas de aire o espacios vacíos en las
+
+emulsiones cárnicas pueden provocar sobrecalentamientos
+
+locales y separación del agua en la emulsión.
+
+
+5-La actividad del agua (Aw) es uno de los factores intrínsecos de los
+
+alimentos, señale la respuesta correcta:
+
+A-se define como el cociente entre la presión de vapor del
+
+alimento y la presión de vapor del agua pura a la misma
+
+temperatura, siendo su valor máximo igual a 1.
+
+B-está determinada por el contenido total de agua del
+
+alimento, por la clase y cantidad de sustancias disueltas y
+
+por cómo se encuentre ligada en el alimento.
+
+C-puede disminuirse sustrayendo agua, elevando la
+
+concentración de electrolitos o agregando sustancias solubles
+
+como diferentes azúcares.
+
+D-las levaduras xerófilas son los microorganismos que resisten
+
+valores de Aw más bajos.
+
+6-El valor de pH es otro factor intrínseco de los alimentos, señale la
+
+respuesta correcta:
+
+A-Clostridium botulinum tipo A y B crece y forma su toxina
+
+sólo cuando el valor de pH está por encima de 4.5
+
+B-el pH próximo a 9 de la clara del huevo tiene un gran
+
+efecto inhibidor del crecimiento bacteriano.
+
+C-el crecimiento microbiano puede elevar en ocasiones el pH
+
+del alimento.
+
+D-todas las respuestas anteriores son correctas.
+
+7-El potencial redox es otro factor intrínseco de los alimentos, señale la
+
+respuesta incorrecta:
+
+A-depende de la presión parcial de oxígeno del alimento pero
+
+es independiente de su composición química.
+
+B-los mohos y levaduras son aerobios estrictos y por ello los
+
+responsables típicos de la putrefacción superficial.
+
+C-los clostridios son anaerobios y responsables de la
+
+putrefacción profunda de la carne.
+
+D-el valor de Eh puede modificarse en la industria alimentaria
+
+mediante la adición de sustancias de acción reductora como el
+
+ácido ascórbico o mediante envasados especiales.
+
+8-La temperatura es el factor extrínseco más importante, señale la respuesta
+
+incorrecta:
+
+A-los microorganismos psicrotrofos resisten temperaturas más
+
+bajas que los microorganismos psicrófilos.
+
+B-la mayoría de los microorganismos patógenos presenta una
+
+temperatura óptima de crecimiento a 37oC.
+
+C-Bacillus stearothermophilus es un microorganismo termófilo
+
+que necesita temperaturas muy elevadas para multiplicarse.
+
+D-Listeria monocytogenes, Yersinia enterocolitica y
+
+Clostridium boutulinum tipo E son microorganismos patógenos
+
+psicrotrofos.
+
+9R-Las isotermas de absorción de un alimento representan el contenido en
+
+humedad de un alimento en relación a (Murcia junio 2006):
+
+A-presión atmosférica.
+
+B-actividad de agua.
+
+C-temperatura.
+
+10R-El tratamiento térmico que corresponde a una leche UHT es de (Murcia junio
+
+2006):
+
+A-110-120 oC durante 10-20 minutos, respectivamente.
+
+B-140-150 oC durante 2-4 segundos.
+
+C-110-120 oC durante 10-20 minutos, respectivamente.
+
+11R-En las conservas de frutas en medio ácido sometidas a un tratamiento
+
+térmico inferior a 100 oC (Murcia junio 2006):
+
+A-no pueden desarrollarse microorganismos patógenos para el
+
+hombre.
+
+B-es posible el desarrollo de esporos.
+
+C-pueden germinar y desarrollarse mohos.
+
+12R-El principal objetivo del proceso de escaldado es (Murcia junio 2006):
+
+A-aumentar la turgencia del producto.
+
+B-la inactivación de enzimas o la destrucción de sus
+
+sustratos.
+
+C-disminuir el contenido de microorganismos patógenos.
+
+13R-El envasado en atmósferas modificadas es una tecnología que sustituye el
+
+aire por un gas o mezcla de gases (Murcia junio 2006):
+
+A-no corrigiendo los cambios producidos durante el
+
+almacenamiento.
+
+B-se corrige la composición de los gases manteniéndola entre
+
+valores prefijados.
+
+C-se mantiene entre valores prefijados la composición de la
+
+atmósfera, así como la humedad y presión.
+
+14R-Se denomina Reacción de Maillard (Ayuntamiento de Madrid julio 2004)
+
+(Comunidad de Madrid febrero 2006):
+
+A-la destrucción de ciertas vitaminas debido al calentamiento
+
+de la leche.
+
+B-el típico “sabor cocido” de la leche, asociado a la
+
+producción de grupos –SH.
+
+C-el pardeamiento de la leche calentada, debido a la
+
+interacción química de ciertos aminoácidos y la lactosa.
+
+D-ninguna de las anteriores.
+
+15R-En España el uso de radiaciones ionizantes para el tratamiento de alimentos
+
+está autorizado en (Ayuntamiento de Madrid julio 2004):
+
+A-pimentón.
+
+B-patatas.
+
+C-cítricos.
+
+16R-De los siguientes materiales ¿cuál está autorizado como combustible para el
+
+ahumado de alimentos? (Comunidad de Madrid febrero 2006):
+
+A-maderas de abeto.
+
+B-juncos.
+
+C-zuros de maíz.
+
+D-aglomerados de madera.
+
+17R-¿Cuál de los siguientes productos puede comercializarse en España?
+
+(Comunidad de Madrid febrero 2006):
+
+A-especias sometidas a un tratamiento de radiaciones
+
+ionizantes.
+
+B-ancas de rana sometidas a un tratamiento de radiaciones
+
+ionizantes.
+
+C-carne de pollo sometida a un tratamiento de radiaciones
+
+ionizantes.
+
+D-quesos elaborados a partir de leche sometida a un
+
+tratamiento de radiaciones ionizantes.
+
+18R-En los tratamientos térmicos utilizados para la conservación de los
+
+alimentos se define valor D como (Comunidad de Madrid 2004):
+
+A-tiempo necesario, a una temperatura dada, para que la
+
+población microbiana superviviente se reduzca en el 90%.
+
+B-tiempo necesario, independientemente de la temperatura, para
+
+que la población microbiana superviviente se reduzca en el
+
+90%.
+
+C-tiempo necesario, a una temperatura dada, para que la
+
+población microbiana superviviente se reduzca en el 99%.
+
+D-tiempo necesario, independientemente de la temperatura, para
+
+que la población microbiana superviviente se reduzca en el
+
+99%.
+
+19R-¿Cuál de las siguientes sustancias están autorizadas como congelantes en el
+
+contacto directo con los alimentos ultracongelados? (Comunidad de Madrid
+
+2004):
+
+A-el aire.
+
+B-el nitrógeno.
+
+C-el anhídrido carbónico.
+
+D-todas las anteriores.
+
+20R-La irradiación de productos alimenticios no podrá utilizarse (Comunidad de
+
+Madrid 2004):
+
+A-para reducir la pérdida de productos alimenticios debida a
+
+procesos de maduración enzimática.
+
+B-cuando se utilice como sustituto de medidas de higiene y
+
+medidas sanitarias.
+
+C-para reducir el deterioro de los productos alimenticios,
+
+frenando o deteniendo el proceso de descomposición.
+
+D-en España no está permitida la irradiación de ningún
+
+producto alimenticio.
+
+21R-En las conservas vegetales en que la esterilización térmica no se realice
+
+en autoclave o por proceso que garantice los mismos resultados, el pH no
+
+deberá ser superior a (Castilla y León julio 2006):
+
+A-4,3.
+
+B-4,4.
+
+C-4,6.
+
+D-4,7.
+
+22R-La tolerancia máxima en la temperatura de los alimentos ultracongelados
+
+expuestos en los muebles frigoríficos de venta al consumidor final es
+
+(Castilla y León julio 2006):
+
+A-hasta 3 oC.
+
+B-hasta 4 oC.
+
+C-hasta 5 oC.
+
+D-hasta 6 oC.
+
+23R-Señale cuál o cuáles tratamientos no pueden utilizarse para descontaminar
+
+de aflatoxinas una partida de frutos secos (Castilla y León julio 2006):
+
+A-tratamientos químicos.
+
+B-tratamientos físicos.
+
+C-tratamientos electrónicos.
+
+D-tratamientos mecánicos.
+
+1b, 2b, 3b, 4c, 5d, 6d, 7a, 8a, 9b, 10b, 11x, 12x, 13x, 14c, 15a, 16a, 17a,
+
+18a, 19d, 20b, 21c, 22d, 23a.
