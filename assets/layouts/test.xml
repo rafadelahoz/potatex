@@ -8,7 +8,7 @@
                 <button id="btnExit" text="Salir" width="15" horizontalAlign="right"/>
             </box>
             <divider/>
-            <box columns="3" width="100%" style="padding: 5%;">
+            <box columns="3" id="buttonHeader" width="100%" style="padding: 5%;">
                 <button id="btnPrevQuestion" text="<" height="15" horizontalAlign="left"/>
                 <button id="btnFinish" text="Corregir" horizontalAlign="center"/>
                 <button id="btnNextQuestion" text=">" height="15" horizontalAlign="right"/>

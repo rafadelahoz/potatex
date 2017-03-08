@@ -42,6 +42,11 @@ class TestController extends XMLController
         // Prepare the finish button
         setupFinishButton();
 
+        if (!data.config.verifyAtTheEnd)
+        {
+            generateResultText();
+        }
+
         // Start
         fetchQuestion();
 
@@ -284,6 +289,7 @@ class TestController extends XMLController
         {
             currentQuestion.state = Aftermath;
             styleQuestionAftermath(currentQuestionIndex);
+            updateResultText();
         }
         else
         {
@@ -357,19 +363,40 @@ class TestController extends XMLController
         // Update individual question style
         styleNavButtonsAftermath();
 
+        // Replace the finish button by the result text
+        generateResultText();
+
+        // Update current question style
+        fetchQuestion();
+    }
+
+    function generateResultText()
+    {
         // Remove the finish button
-        var panel : Container = cast(e.component.parent, Container);
-        panel.removeChild(e.component, true);
+        var btnFinish : Button = getComponentAs("btnFinish", Button);
+        var panel : Container = getComponentAs("buttonHeader", Container);
+        panel.removeChild(btnFinish, true);
 
         // Add the question result text instead of the button
         var text : Text = new Text();
-        text.text = "Correctas: " + data.getCorrectlyAswered() + "/" + data.getAnswerableQuestions();
+        text.id = "resultText";
         text.style.fontBold = true;
         text.horizontalAlign = "center";
         panel.addChild(text);
 
-        // Update current question style
-        fetchQuestion();
+        updateResultText(text);
+    }
+
+    function updateResultText(?label : Text = null)
+    {
+        if (label == null)
+        {
+            var panel : Container = getComponentAs("buttonHeader", Container);
+            label = panel.findChild("resultText", Text);
+        }
+
+        if (label != null)
+            label.text = "Correctas: " + data.getCorrectlyAswered() + "/" + data.getAnswerableQuestions();
     }
 
     function styleNavButtonsAftermath()
