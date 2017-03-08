@@ -9,6 +9,9 @@ import haxe.ui.toolkit.containers.Container;
 import haxe.ui.toolkit.controls.Text;
 import haxe.ui.toolkit.controls.TextInput;
 import haxe.ui.toolkit.containers.Accordion;
+import haxe.ui.toolkit.controls.popups.Popup;
+import haxe.ui.toolkit.core.PopupManager;
+import haxe.ui.toolkit.containers.HBox;
 
 class LessonSelectionController extends XMLController
 {
@@ -96,18 +99,33 @@ class LessonSelectionController extends XMLController
 
         var testData : TestData = TestBuilder.build(options);
 
+        // Store the current test build options
+        Session.lastTestBuildOptions = options;
+        Storage.store();
+
         if (testData.questions == null || testData.questions.length == 0)
         {
-            showPopup("No hay ninguna pregunta dentro de los temas elegidos con la configuración seleccionada.\nRelaja la configuración y vuelve a probar");
+            showPopup("No hay ninguna pregunta dentro de los temas elegidos " +
+                    "con la configuración seleccionada.\n" +
+                    "Relaja la configuración y vuelve a probar",
+                    "Demasiado específico");
             return;
         }
         else if (testData.questions.length < options.numberOfQuestions)
         {
-            trace("Hay menos preguntas que las requeridas");
-        }
+            showConfirmationPopup("No hay suficientes preguntas",
+                                    "Con esa configuración puedo preparar un test con " +
+                                    testData.questions.length + " preguntas, pero tú querías " +
+                                    options.numberOfQuestions + ".\n" +
+                                    "¿Quires hacer un test con " + testData.questions.length + " preguntas?",
+                                    "Sí, adelante", "No, revisaré la configuración",
+                                    function(e:Dynamic) {
+                                        root.removeAllChildren();
+                                        root.addChild(new TestController(testData).view);
+                                    });
 
-        // Store the current test build options
-        Session.lastTestBuildOptions = options;
+            return;
+        }
 
         root.removeAllChildren();
         root.addChild(new TestController(testData).view);
@@ -156,5 +174,28 @@ class LessonSelectionController extends XMLController
             trace("Checkbox not found: " + checkboxId);
 
         return value;
+    }
+
+    function showConfirmationPopup(title : String, message : String, okLabel : String, cancelLabel : String, okCallback : Dynamic -> Void)
+    {
+        var popup : Popup = PopupManager.instance.showSimple(message, title, {});
+
+        var hbox : HBox = new HBox();
+        hbox.percentWidth = 100;
+        popup.addChild(hbox);
+
+        var okBtn = new Button();
+        okBtn.text = okLabel;
+        okBtn.horizontalAlign = "center";
+        okBtn.onClick = okCallback;
+        hbox.addChild(okBtn);
+
+        var cancelBtn = new Button();
+        cancelBtn.text = cancelLabel;
+        cancelBtn.horizontalAlign = "center";
+        cancelBtn.onClick = function(e:Dynamic) {
+            PopupManager.instance.hidePopup(popup);
+        };
+        hbox.addChild(cancelBtn);
     }
 }

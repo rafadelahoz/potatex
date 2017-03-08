@@ -16,6 +16,8 @@ class MainController extends XMLController
         {
             var parser : LessonParser = new LessonParser();
             parser.loadLessons();
+
+            Storage.restore();
         }
 
         attachEvent("btnQuickTest", MouseEvent.CLICK, function(e:UIEvent) {
