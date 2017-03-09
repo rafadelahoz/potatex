@@ -16,8 +16,10 @@
 	<haxelib name="hscript" />
     <haxelib name="haxeui" />
 
-	<assets path="assets" rename="assets" />
-	<assets path="assets/layouts" rename="layouts" />
-	<assets path="assets/fonts" rename="fonts" />
+	<assets path="assets"/>
+	<assets path="assets/layouts" />
+	<assets path="assets/fonts" />
+	<assets path="assets/images" />
+	<assets path="assets/lessons" />
 
 </project>

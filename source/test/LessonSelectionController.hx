@@ -19,7 +19,7 @@ class LessonSelectionController extends XMLController
 
     public function new()
     {
-        super("layouts/lessonSelection.xml");
+        super("assets/layouts/lessonSelection.xml");
 
         var panel : Container = getComponentAs("lessonList", Container);
         if (panel == null)

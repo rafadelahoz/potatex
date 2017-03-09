@@ -10,7 +10,7 @@ class MainController extends XMLController
 {
     public function new()
     {
-        super("layouts/menu.xml");
+        super("assets/layouts/menu.xml");
 
         if (DB.lessons == null || DB.lessons.length <= 0)
         {

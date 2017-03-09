@@ -14,7 +14,7 @@ class InfiniteTestController extends XMLController
 
     public function new(?lessonTitle : String = null)
     {
-        super("layouts/test.xml");
+        super("assets/layouts/test.xml");
 
         if (lessonTitle != null)
             lesson = DB.getLessonByTitle(lessonTitle);

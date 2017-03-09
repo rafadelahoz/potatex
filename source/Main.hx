@@ -27,8 +27,8 @@ class Main {
     static function setupStyles()
     {
         Macros.addStyleSheet("assets/style.css");
-        var f = Assets.getFont("fonts/Arial.ttf");
-        // var fb = Assets.getFont("fonts/Oxygen-Bold.ttf");
+        var f = Assets.getFont("assets/fonts/Arial.ttf");
+        // var fb = Assets.getFont("assets/fonts/Oxygen-Bold.ttf");
         StyleManager.instance.addStyle("Text", new Style( {
             fontSize: 14,
             fontName: f.fontName,

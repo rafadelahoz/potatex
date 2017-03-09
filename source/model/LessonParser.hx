@@ -1,7 +1,5 @@
 package;
 
-import openfl.Assets;
-
 class LessonParser
 {
     static var debugOutput : Bool = false;
@@ -24,7 +22,7 @@ class LessonParser
                 continue;
             }
 
-            var lessonString : String = Assets.getText(lessonPath + "/" + lessonName);
+            var lessonString : String = sys.io.File.getContent(lessonPath + "/" + lessonName);
             if (lessonString != null)
             {
                 dtrace("Parsing " + lessonName);

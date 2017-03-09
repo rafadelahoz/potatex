@@ -19,7 +19,7 @@ class TestController extends XMLController
 
     public function new(TestData : TestData)
     {
-        super("layouts/test.xml");
+        super("assets/layouts/test.xml");
 
         data = TestData;
 
