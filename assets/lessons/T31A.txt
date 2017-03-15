@@ -1,0 +1,335 @@
+1-El sistema Traces (Trade Control and Expert System) es una red informática
+
+cuya traducción en castellano es:
+
+A-Sistema Informático Veterinario Integrado.
+
+B-Procedimiento Informático Veterinario Integrado.
+
+C-Sistema de Control Experto Veterinario.
+
+D-Sistema de Control Informático Veterinario.
+
+2-El ámbito de aplicación del Sistema Traces es (señale la respuesta
+
+INCORRECTA):
+
+A-Sanidad animal.
+
+B-Bienestar animal.
+
+C-Salud Pública.
+
+D-Salud Pública Veterinaria.
+
+3-Algunas de las características generales del Sistema Traces son (señale la
+
+respuesta INCORRECTA):
+
+A-Se requiere una conexión a internet a través de navegador
+
+de páginas web.
+
+B-El acceso es público.
+
+C-Notificación de mensajes por correo electrónico.
+
+D-Interacción entre operadores económicos y Autoridades
+
+competentes.
+
+4-De acuerdo con la normativa de la UE, los Estados Miembros están obligados a
+
+introducir en Traces los datos (parte I, II y, en su caso, III) de los
+
+Documentos Veterinarios Comunes de Entrada relativos a las partidas de
+
+animales y productos de origen animal introducidas a través de los puestos de
+
+inspección fronterizos de la UE:
+
+A-En todos los casos.
+
+B-Sólo cuando provengan de países terceros sometidos a
+
+medidas de restricción.
+
+C-Cuando procedan de determinados países terceros.
+
+D-Cuando se estén aplicando medidas cautelares.
+
+5-En relación al alta de usuarios (Agentes de aduana y transitarios) los
+
+interesados en la carga podrán darse de alta en TRACES como:
+
+A-“transitarios” asociados a una determinada organización.
+
+B-“Agentes de aduana y transitarios”.
+
+C-“responsable en la carga”.
+
+D-los Agentes de Aduana y transitarios no tienen que darse de
+
+alta como usuarios de Traces.
+
+6-Algunas de las ventajas del sistema TRACES son (señale la respuesta
+
+INCORRECTA):
+
+A-Prevención de la repetición de la información y recursos.
+
+B-Incremento de la seguridad y de la velocidad de transmisión
+
+de datos.
+
+C-Lucha contra las enfermedades animales.
+
+D-Simplificación de las tareas administrativas.
+
+
+
+7-El sistema Traces se alimenta fundamentalmente con información contenida en:
+
+A-los documentos veterinarios comunes de entrada (DVCE) para
+
+animales importados de terceros países (con inclusión de los
+
+casos de tránsito por uno o varios terceros países antes de
+
+llegar a las fronteras de la UE).
+
+B-los DVCE para productos en tránsito en la UE y para
+
+productos importados de un tercer país, así como los DVCE
+
+para todos los lotes rechazados.
+
+C-los certificados sanitarios relacionados con los
+
+intercambios intracomunitarios para animales y productos de
+
+origen animal, cuando la legislación comunitaria los exija.
+
+D-todas las respuestas anteriores son correctas.
+
+8-El sistema Traces integra a los antiguos sistemas:
+
+A-sistema ANIMO.
+
+B-sistema SHIFT.
+
+C-sistema ANIMO y SHIFT.
+
+D-sistema ANIMO, SHIFT y OLIS.
+
+9-La Decisión de la Comisión relativa al desarrollo de un sistema informático
+
+veterinario integrado denominado Traces es:
+
+A-la Decisión 2001/623/CE.
+
+B-la Decisión 2002/623/CE.
+
+C-la Decisión 2003/623/CE.
+
+D-la Decisión 2004/623/CE.
+
+10-La Decisión de la Comisión sobre la creación de un sistema informático
+
+veterinario integrado es:
+
+A-la Decisión 2000/24/CE.
+
+B-la Decisión 2001/24/CE.
+
+C-la Decisión 2002/24/CE.
+
+D-la Decisión 2003/24/CE.
+
+11-La creación del Sistema del Sistema Informático de Sanidad Exterior se hizo
+
+mediante:
+
+A-Orden SAS/3160/2007, de 16 de noviembre.
+
+B-Orden SAS/3160/2008, de 16 de noviembre.
+
+C-Orden SAS/3160/2009, de 16 de noviembre.
+
+D-Orden SAS/3160/2010, de 16 de noviembre.
+
+12- El Sistema Informático del Sanidad Exterior (SISAEX) permite la
+
+tramitación electrónica de las solicitudes, escritos y comunicaciones
+
+relativas a:
+
+A-Control y vigilancia higiénico-sanitaria en el tráfico
+
+nacional de mercancías.
+
+B-Control higiénico-sanitario en el movimiento internacional
+
+de mercancías.
+
+C-Control y vigilancia higiénico-sanitaria en el tráfico
+
+internacional de mercancías.
+
+D-Inspección y vigilancia higiénico-sanitaria en el tráfico
+
+internacional de mercancías.
+
+13-De acuerdo con el artículo 9 de la Orden SAS/3160/2009, la gestión del
+
+sistema SISAEX corresponde a:
+
+A-La Subdirección General de Sanidad Exterior.
+
+B-La Subdirección General de Tecnologías de la Información.
+
+C-La Secretaría General de Sanidad
+
+D-la Dirección General de Sanidad.
+
+
+
+14-La Decisión de la Comisión, de 28 de septiembre de 2009, por la que se
+
+establece una lista de puestos de inspección fronterizos autorizados y se
+
+disponen determinadas normas sobre las inspecciones efectuadas por los
+
+expertos veterinarios de la Comisión, así como las unidades veterinarias de
+
+Traces define “unidad veterinaria” como:
+
+A-“unidad central”: la autoridad central competente de un
+
+Estado miembro, designada como tal a efectos de Traces.
+
+B-“unidad regional”: cualquier autoridad regional de un
+
+Estado miembro, designada como tal a efectos de Traces.
+
+C-“unidad local”: cualquier autoridad local de un Estado
+
+miembro, designada como tal a efectos de Traces.
+
+D-Las tres respuestas anteriores son correctas.
+
+15-Para confeccionar y modificar periódicamente la lista del anexo I (Piensos
+
+y alimentos de origen no animal sujetos a controles oficiales más intensos en
+
+el punto de entrada designado) del Reglamento 669/2009, por el que se aplica
+
+el Reglamento 882/2004 en lo que respecta a la intensificación de los
+
+controles oficiales de las importaciones de determinados piensos y alimentos
+
+de origen no animal, deberán consultarse, como mínimo, las siguientes fuentes
+
+de información (señale la respuesta INCORRECTA):
+
+A-Datos de las notificaciones recibidas a través del RASFF.
+
+B-Informes y datos resultantes de las actividades de la
+
+Oficina Alimentaria y Veterinaria.
+
+C-Información intercambiada entre la Comisión, los Estados
+
+miembros, la Autoridad Europea de Seguridad Alimentaria y la
+
+Organización Mundial de Sanidad Animal (OIE).
+
+D-Informes y datos recibidos de terceros países.
+
+16-La lista del anexo I del Reglamento 669/2009 se revisará de forma periódica
+
+y, como mínimo:
+
+A-Mensualmente.
+
+B-Trimestralmente.
+
+C-Semestralmente.
+
+D-Anualmente.
+
+17-De acuerdo con el artículo 8 del Reglamento 669/2009 relativo a la
+
+intensificación de los controles oficiales en los puntos de entrada
+
+designados, la autoridad competente del punto de entrada designado realizará,
+
+sin dilaciones indebidas controles documentales de todas las partidas en:
+
+A-Los dos días laborables siguientes a su llegada al PED,
+
+salvo que se den circunstancias excepcionales e inevitables.
+
+B-Los dos días naturales siguientes a su llegada al PED,
+
+salvo que se den circunstancias excepcionales e inevitables.
+
+C-Los tres días laborables siguientes a su llegada al PED,
+
+salvo que se den circunstancias excepcionales e inevitables.
+
+D-Los tres días naturales siguientes a su llegada al PED,
+
+salvo que se den circunstancias excepcionales e inevitables.
+
+18-La Directiva 97/78/CE del Consejo, de 18 de diciembre de 1997, por la que
+
+se establecen los principios relativos a la organización de controles
+
+veterinarios de los productos que se introduzcan en la Comunidad procedentes
+
+de países terceros define tres tipos de controles veterinarios, siendo uno de
+
+ellos:
+
+A-Control de documentos.
+
+B-Control identificativo.
+
+C-Control de identidad.
+
+D-Control material.
+
+19-El control de identidad al que hace referencia la Directiva 97/78/CE
+
+consiste en la comprobación, mediante inspección visual, de la concordancia
+
+del producto con:
+
+A-Los certificados veterinarios.
+
+B-Los documentos veterinarios.
+
+C-Otros documentos exigidos por la normativa veterinaria.
+
+D-Con cualquiera de los anteriores.
+
+
+
+20-La definición de control físico de la Directiva 97/78/CE establece que éste
+
+consiste en un control de propio producto, que podrá incluir (señale la
+
+respuesta INCORRECTA):
+
+A-El control del envase.
+
+B-El control de la temperatura.
+
+C-Pruebas organolépticas sencillas.
+
+D-Un muestro y pruebas de laboratorio.
+
+1a, 2c, 3b, 4a, 5a, 6c, 7d, 8c, 9c, 10d, 11c, 12c, 13a, 14d, 15c, 16b, 17a,
+
+18c, 19d, 20c.

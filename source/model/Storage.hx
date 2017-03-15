@@ -55,9 +55,16 @@ class Storage
     static function unserializeBuildOptions(input : Dynamic) : TestBuilder.TestBuildOptions
     {
         var sourceLessons : Array<Lesson> = [];
-        for (lessonTitle in cast(input.sourceLessons, Array<Dynamic>))
+
+        if (input == null)
+            return null;
+
+        if (input.sourceLessons != null)
         {
-            sourceLessons.push(DB.getLessonByTitle(lessonTitle));
+            for (lessonTitle in cast(input.sourceLessons, Array<Dynamic>))
+            {
+                sourceLessons.push(DB.getLessonByTitle(lessonTitle));
+            }
         }
 
         var result : TestBuilder.TestBuildOptions = {
