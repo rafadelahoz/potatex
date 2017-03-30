@@ -97,7 +97,10 @@ class LessonParser
                             foundNewToken = true;
                         }
                         // Or maybe it is an answer
-                        else if (mark == "A" || mark == "B" || mark == "C" || mark=="D")
+                        else if (mark.toUpperCase() == "A" ||
+                                 mark.toUpperCase() == "B" ||
+                                 mark.toUpperCase() == "C" ||
+                                 mark.toUpperCase() == "D")
                         {
                             // dtrace("Located answer");
                             token = Answer;
