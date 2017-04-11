@@ -2,7 +2,7 @@ package;
 
 class LessonParser
 {
-    static var debugOutput : Bool = true;
+    static var debugOutput : Bool = false;
 
     var lessonPath : String = "assets/lessons";
 
