@@ -2,7 +2,7 @@ package;
 
 class LessonParser
 {
-    static var debugOutput : Bool = false;
+    static var debugOutput : Bool = true;
 
     var lessonPath : String = "assets/lessons";
 
@@ -62,13 +62,15 @@ class LessonParser
 
                 // dtrace("## line(nor): " + line);
 
-                var markerPos = line.indexOf("-");
+                var posData : Dynamic = locateMarker(line);
+                var markerPos = posData.pos;
+                var markerLength = posData.length;
                 if (markerPos > 0)
                 {
                     var originalLine : String = line;
 
                     var mark : String = line.substring(0, markerPos);
-                    line = line.substring(markerPos+1);
+                    line = line.substring(markerPos+markerLength);
                     mark = StringTools.trim(mark);
                     // dtrace("### Marker: " + mark);
 
@@ -208,6 +210,42 @@ class LessonParser
             lesson.title = title;
             lesson.number = number;
         }
+    }
+
+    function locateMarker(line : String) : Dynamic
+    {
+        var comboPos : Int = line.indexOf(".-");
+        var dashPos : Int = line.indexOf("-");
+        var dotPos : Int = line.indexOf(".");
+
+        var markerPos : Int = -1;
+        var length : Int = 0;
+
+        if (comboPos > 0)
+        {
+            markerPos = comboPos;
+            length = 2;
+        }
+        else
+        {
+            if (dashPos > 0 && dotPos > 0)
+            {
+                markerPos = Std.int(Math.min(dashPos, dotPos));
+                length = 1;
+            }
+            else if (dashPos > 0)
+            {
+                markerPos = dashPos;
+                length = 1;
+            }
+            else if (dotPos > 0)
+            {
+                markerPos = dotPos;
+                length = 1;
+            }
+        }
+
+        return {pos: markerPos, length :length};
     }
 
     static function dtrace(what : Dynamic)
