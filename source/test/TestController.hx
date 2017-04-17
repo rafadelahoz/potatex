@@ -71,6 +71,8 @@ class TestController extends XMLController
     function setupExitButton()
     {
         getComponentAs("btnExit", Button).onClick = function(e : Dynamic) {
+            // Save data before exiting
+            Storage.store();
             root.removeAllChildren();
             root.addChild(new LessonSelectionController().view);
         };
@@ -288,6 +290,7 @@ class TestController extends XMLController
         if (!data.config.verifyAtTheEnd)
         {
             currentQuestion.state = Aftermath;
+            recordQuestionAnswer(currentQuestion);
             styleQuestionAftermath(currentQuestionIndex);
             updateResultText();
         }
@@ -358,6 +361,7 @@ class TestController extends XMLController
         for (question in data.questions)
         {
             question.state = Aftermath;
+            recordQuestionAnswer(question);
         }
 
         // Update individual question style
@@ -430,6 +434,22 @@ class TestController extends XMLController
             button.styleName = "correct";
         else
             button.styleName = "wrong";
+    }
+
+    function recordQuestionAnswer(question : TestQuestion)
+    {
+        var correct : Bool = false;
+
+        if (question.question.correct < 0)
+            correct = false;
+        else if (question.answer < 0)
+            correct = false;
+        else if (question.answer == question.question.correct)
+            correct = true;
+        else
+            correct = false;
+
+        Statistics.recordAnswer(question.question.id, correct);
     }
 
     function setupDebugRoutines()

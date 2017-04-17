@@ -25,4 +25,15 @@ class DB
 
         return null;
     }
+
+    public static function getIdsOfQuestionsOfLesson(title : String) : Array<String>
+    {
+        var list : Array<String> =  [];
+
+        for (question in DB.getLessonByTitle(title).questions) {
+            list.push(question.id);
+        }
+
+        return list;
+    }
 }
