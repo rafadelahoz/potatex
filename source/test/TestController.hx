@@ -30,41 +30,49 @@ class TestController extends XMLController
         // Prepare the exit button
         setupExitButton();
 
-        // Prepare the prev/next buttons
-        setupNavigationButtons();
-
-        // Prepare the answer buttons
-        setupAnswerButtons();
-
-        // Build navigation buttons
-        buildNavigationButtons();
-
-        // Prepare the finish button
-        setupFinishButton();
-
-        if (!data.config.verifyAtTheEnd)
+        if (data.questions != null && data.questions.length > 0)
         {
-            generateResultText();
+            // Prepare the prev/next buttons
+            setupNavigationButtons();
+
+            // Prepare the answer buttons
+            setupAnswerButtons();
+
+            // Build navigation buttons
+            buildNavigationButtons();
+
+            // Prepare the finish button
+            setupFinishButton();
+
+            if (!data.config.verifyAtTheEnd)
+            {
+                generateResultText();
+            }
+
+            // Start
+            fetchQuestion();
+
+            // Setup debug routines
+            setupDebugRoutines();
+
+            trace("Test with the following questions:");
+            for (question in data.questions)
+            {
+                trace(" - " + question.question.id);
+            }
         }
-
-        // Start
-        fetchQuestion();
-
-        /*view.addEventListener(UIEvent.RESIZE, function(what : Dynamic) {
-            var navPanel : Container = getComponentAs("directNavPanel", Container);
-            if (navPanel != null)
-                navPanel.onRefresh()
-            else
-                trace("what");
-        });*/
-
-        // Setup debug routines
-        setupDebugRoutines();
-
-        trace("Test with the following questions:");
-        for (question in data.questions)
+        else
         {
-            trace(" - " + question.question.id);
+            getComponentAs("btnPrevQuestion", Button).visible = false;
+            getComponentAs("btnNextQuestion", Button).visible = false;
+
+            getComponentAs("txtQuestion", Text).text = "No hay preguntas";
+            for (id in 1...5)
+            {
+                var btnId = "btnA" + id;
+                getComponentAs("btnA" + id, Button).visible = false;
+                getComponentAs("txtA" + id, Text).visible = false;
+            }
         }
     }
 
@@ -74,7 +82,18 @@ class TestController extends XMLController
             // Save data before exiting
             Storage.store();
             root.removeAllChildren();
-            root.addChild(new LessonSelectionController().view);
+
+
+            if (data.failedQuestionsTest)
+            {
+                // Failure tests return to menu and won't save build options?
+                root.addChild(new MainController().view);
+            }
+            else
+            {
+                // Normal tests return to lesson selection
+                root.addChild(new LessonSelectionController().view);
+            }
         };
     }
 
@@ -449,7 +468,7 @@ class TestController extends XMLController
         else
             correct = false;
 
-        Statistics.recordAnswer(question.question.id, correct);
+        Statistics.recordAnswer(question.question.id, correct, data.failedQuestionsTest);
     }
 
     function setupDebugRoutines()

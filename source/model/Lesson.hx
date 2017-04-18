@@ -25,4 +25,15 @@ class Lesson
 
         return null;
     }
+
+    public function getQuestionById(id : String) : Question
+    {
+        for (q in questions)
+        {
+            if (q.id == id)
+                return q;
+        }
+
+        return null;
+    }
 }

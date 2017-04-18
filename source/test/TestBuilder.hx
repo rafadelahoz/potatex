@@ -45,6 +45,28 @@ class TestBuilder
         return data;
     }
 
+    public static function buildFailedQuestionsTest() : TestData
+    {
+        var questions : Array<TestQuestion> = [];
+        trace(Statistics.failedList);
+        for (questionId in Statistics.failedList)
+        {
+            var question : Question = DB.findQuestionById(questionId);
+            if (question != null)
+                questions.push(new TestQuestion(question));
+        }
+
+        Random.shuffle(questions);
+
+        var config : TestData.TestConfiguration = {
+            verifyAtTheEnd: false
+        };
+
+        var data : TestData = new TestData("Test de Repaso", questions, config);
+        data.failedQuestionsTest = true;
+        return data;
+    }
+
     static function mergeAllQuestions(lessons : Array<Lesson>) : Array<Question>
     {
         var questions : Array<Question> = [];

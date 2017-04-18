@@ -6,5 +6,6 @@
         <divider />
 		<!--<button text="Test rápido" width="100%" id="btnQuickTest"/>-->
         <button text="Elegir tema" id="btnCustomTest" horizontalAlign="center"/>
+        <button text="Test de repaso" id="btnFailedTest" horizontalAlign="center"/>
 	</vbox>
 </scrollview>

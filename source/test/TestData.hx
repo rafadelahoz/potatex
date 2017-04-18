@@ -5,6 +5,7 @@ class TestData
     public var title : String;
     public var config : TestConfiguration;
     public var questions : Array<TestQuestion>;
+    public var failedQuestionsTest : Bool;
 
     public function new(Title : String, ?Questions : Array<TestQuestion> = null, Config : TestConfiguration)
     {
@@ -13,6 +14,7 @@ class TestData
             Questions = [];
         questions = Questions;
         config = Config;
+        failedQuestionsTest = false;
     }
 
     public function getCorrectlyAswered() : Int

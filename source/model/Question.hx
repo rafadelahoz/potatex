@@ -44,4 +44,9 @@ class Question
     {
         return lessonId + ": " + "Q" + number + ": " + text + (real ? " (Real) " : " ") + (correct < 0 ? "X" : [" ", "A", "B", "C", "D"][correct]);
     }
+
+    public static function lessonFromId(questionId : String) : String
+    {
+        return questionId.substring(0, questionId.lastIndexOf("-"));
+    }
 }

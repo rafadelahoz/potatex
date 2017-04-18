@@ -36,4 +36,29 @@ class DB
 
         return list;
     }
+
+    public static function findQuestionById(questionId : String) : Question
+    {
+        var question : Question = null;
+
+        trace("QuestionId: " + questionId);
+
+        if (questionId != null)
+        {
+            var lessonId : String = Question.lessonFromId(questionId);
+            trace("LessonId: " + lessonId);
+            if (lessonId != null)
+            {
+                var lesson : Lesson = getLessonByTitle(lessonId);
+                if (lesson != null)
+                {
+                    trace("Found lesson");
+                    question = lesson.getQuestionById(questionId);
+                    trace("Question: " + question);
+                }
+            }
+        }
+
+        return question;
+    }
 }
